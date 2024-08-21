@@ -79,8 +79,9 @@ function sampleRUM(checkpoint, data = {}) {
         isSelected,
         firstReadTime,
         sampleRUM,
-        sanitizeURL: urlSanitizers[window.hlx.RUM_MASK_URL || 'path'],
-        rumSessionStorage,
+        collector: (...args) => window.hlx.rum.queue.push(args),
+        //sanitizeURL: urlSanitizers[window.hlx.RUM_MASK_URL || 'path'],
+        //rumSessionStorage,
       };
     }
 

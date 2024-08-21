@@ -1,6 +1,5 @@
 // eslint-disable-next-line import/no-cycle
 import {
-  isSocialAllowed,
   createElement,
   deepMerge,
   getTextLabel,
@@ -61,7 +60,7 @@ export function isVideoLink(link) {
 
 export function selectVideoLink(links, preferredType, videoType = videoTypes.both) {
   const linksArray = Array.isArray(links) ? links : [...links];
-  const hasConsentForSocialVideos = isSocialAllowed();
+  const hasConsentForSocialVideos = true;
   const isTypeBoth = videoType === videoTypes.both;
   const prefersYouTube = (hasConsentForSocialVideos && preferredType !== 'local')
                       || (!isTypeBoth && videoType === videoTypes.youtube);

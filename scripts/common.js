@@ -29,9 +29,9 @@ function loadFooter(footer) {
  * If the page is running in a iframe with srcdoc, the ancestor origin is returned.
  * @returns {String} The true origin
  */
-export function getOrigin() {
-  return window.location.href === 'about:srcdoc' ? window.parent.location.origin : window.location.origin;
-}
+// export function getOrigin() {
+//   return window.location.href === 'about:srcdoc' ? window.parent.location.origin : window.location.origin;
+// }
 
 export function getHref() {
   if (window.location.href !== 'about:srcdoc') return window.location.href;
@@ -40,11 +40,11 @@ export function getHref() {
   return `${window.parent.location.origin}${urlParams.get('path')}`;
 }
 
-export const getLanguagePath = () => {
-  const { pathname } = new URL(window.location.href);
-  const langCodeMatch = pathname.match('^(/[a-z]{2}(-[a-z]{2})?/).*');
-  return langCodeMatch ? langCodeMatch[1] : '/';
-};
+// export const getLanguagePath = () => {
+//   const { pathname } = new URL(window.location.href);
+//   const langCodeMatch = pathname.match('^(/[a-z]{2}(-[a-z]{2})?/).*');
+//   return langCodeMatch ? langCodeMatch[1] : '/';
+// };
 
 export async function getPlaceholders() {
   const url = `${getLanguagePath()}placeholder.json`;
@@ -398,11 +398,11 @@ export const slugify = (text) => (
     .replace(/--+/g, '-')
 );
 
-async function getConstantValues() {
-  const url = '/constants.json';
-  const constants = await fetch(url).then((resp) => resp.json());
-  return constants;
-}
+// async function getConstantValues() {
+//   const url = '/constants.json';
+//   const constants = await fetch(url).then((resp) => resp.json());
+//   return constants;
+// }
 
 /**
  * Transforms an array of strings in the format 'key: value' into an object.
@@ -435,12 +435,12 @@ const formatValues = (values) => {
   return obj;
 };
 
-const { searchUrls, cookieValues, magazineConfig } = await getConstantValues();
+// const { searchUrls, cookieValues, magazineConfig } = await getConstantValues();
 
-// This data comes from the sharepoint 'constants.xlsx' file
-export const COOKIE_CONFIGS = formatValues(cookieValues.data);
-export const SEARCH_URLS = formatValues(searchUrls.data);
-export const MAGAZINE_CONFIGS = formatValues(magazineConfig.data);
+// // This data comes from the sharepoint 'constants.xlsx' file
+// export const COOKIE_CONFIGS = formatValues(cookieValues.data);
+// export const SEARCH_URLS = formatValues(searchUrls.data);
+// export const MAGAZINE_CONFIGS = formatValues(magazineConfig.data);
 
 /**
  * Check if one trust group is checked.
@@ -451,23 +451,23 @@ export function checkOneTrustGroup(groupName) {
   return oneTrustCookie.includes(`${groupName}:1`);
 }
 
-const {
-  PERFORMANCE_COOKIE = false,
-  TARGETING_COOKIE = false,
-  SOCIAL_COOKIE = false,
-} = COOKIE_CONFIGS;
+// const {
+//   PERFORMANCE_COOKIE = false,
+//   TARGETING_COOKIE = false,
+//   SOCIAL_COOKIE = false,
+// } = COOKIE_CONFIGS;
 
-export function isPerformanceAllowed() {
-  return checkOneTrustGroup(PERFORMANCE_COOKIE);
-}
+// export function isPerformanceAllowed() {
+//   return checkOneTrustGroup(PERFORMANCE_COOKIE);
+// }
 
-export function isTargetingAllowed() {
-  return checkOneTrustGroup(TARGETING_COOKIE);
-}
+// export function isTargetingAllowed() {
+//   return checkOneTrustGroup(TARGETING_COOKIE);
+// }
 
-export function isSocialAllowed() {
-  return checkOneTrustGroup(SOCIAL_COOKIE);
-}
+// export function isSocialAllowed() {
+//   return checkOneTrustGroup(SOCIAL_COOKIE);
+// }
 
 /*
   The generateId function should be used only
