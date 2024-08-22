@@ -40,11 +40,11 @@ export function getHref() {
   return `${window.parent.location.origin}${urlParams.get('path')}`;
 }
 
-// export const getLanguagePath = () => {
-//   const { pathname } = new URL(window.location.href);
-//   const langCodeMatch = pathname.match('^(/[a-z]{2}(-[a-z]{2})?/).*');
-//   return langCodeMatch ? langCodeMatch[1] : '/';
-// };
+export const getLanguagePath = () => {
+  const { pathname } = new URL(window.location.href);
+  const langCodeMatch = pathname.match('^(/[a-z]{2}(-[a-z]{2})?/).*');
+  return langCodeMatch ? langCodeMatch[1] : '/';
+};
 
 export async function getPlaceholders() {
   const url = `${getLanguagePath()}placeholder.json`;
