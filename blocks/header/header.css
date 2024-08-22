@@ -141,7 +141,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 288px;
+  flex-basis: 135px;
   font-size: var(--nav-font-size);
   font-weight: 700;
   line-height: 1;
@@ -260,6 +260,10 @@ header nav .nav-sections ul > li > ul > li {
     height: 100%;
     /* display: inline-block; */
     line-height: 54px;
+    padding: 0;
+    margin: 0 3px;
+    letter-spacing: 3px;
+    font-size: 11px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -298,4 +302,45 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+header nav .nav-tools a{
+  background-color: #cf2230;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .78125vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: GillSansRegular;
+    letter-spacing: 1.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: -8px;
+}
+header nav .nav-tools span.icon{
+  width: 40px;
+  height: 55px;
+  margin-top:6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5px;
+  position: relative;
+  background: rgba(25, 25, 25, .8);
+  padding: 15px 8px;
+  border-radius: 0 4px 4px 0;
 }
