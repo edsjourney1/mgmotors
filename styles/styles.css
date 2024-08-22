@@ -22,7 +22,7 @@
   --white:#ffffff;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
+  --body-font-family: Roboto-Regular  , sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
   --nav-font-family: gill-sans-light,sans-serif;
   --heading-font-family: GillSans-Bold, sans-serif;

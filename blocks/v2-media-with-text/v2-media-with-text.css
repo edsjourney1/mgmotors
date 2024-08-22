@@ -1,5 +1,9 @@
 /* Variant: default  */
-
+main > .section > div.v2-media-with-text-wrapper {
+  width: 100%;
+  padding: 0;
+  max-width: none;
+}
 .v2-media-with-text {
   display: flex;
   flex-direction: column;
@@ -45,7 +49,9 @@
 .v2-media-with-text--video-with-poster .icon-play-video {
   display: flex;
 }
-
+.v2-video__playback-button {
+  display: none;
+}
 .v2-media-with-text--video-with-poster .v2-video__playback-button {
   width: 100%;
   height: 100%;
@@ -57,6 +63,7 @@
 .v2-media-with-text--video-with-poster .v2-video__playback-button .icon svg {
   width: 72px;
   height: 72px;
+  display: none;
 }
 
 .v2-media-with-text__content-section,
