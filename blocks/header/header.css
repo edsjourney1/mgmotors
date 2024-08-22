@@ -25,10 +25,10 @@ header nav {
 }
 
 header nav[aria-expanded='true'] {
-  grid-template:
+/*   grid-template:
     'hamburger brand' var(--nav-height)
     'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
+    'tools tools' var(--nav-height) / auto 1fr; */
   overflow-y: auto;
   min-height: 100dvh;
 }
@@ -370,7 +370,7 @@ header nav .nav-tools span.icon{
     header nav .nav-tools span.icon {
         display:none;
     }
-    .nav-tools>p{
+    header nav p{
        margin-top: 0.8em;
        margin-bottom: 0.25em;
     }
