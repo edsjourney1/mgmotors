@@ -347,7 +347,7 @@ header nav .nav-tools span.icon{
 /* Mobile Nav CSS */
 @media screen and (max-width: 901px) {
      header nav {
-         grid-template-columns: 1fr 1fr 1fr 1fr;
+/*          grid-template-columns: 1fr 1fr 1fr 1fr; */
      }
     header nav .nav-hamburger {
     grid-column: 4;
@@ -373,6 +373,9 @@ header nav .nav-tools span.icon{
     header nav p{
        margin-top: 0.8em;
        margin-bottom: 0.25em;
+    }
+    header nav .nav-tools a {
+        font-size: 13px;
     }
   
 }
