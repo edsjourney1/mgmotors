@@ -358,7 +358,8 @@ header nav .nav-tools span.icon{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:auto  
+    height:auto;
+    justify-self:end;
     }
     header nav .nav-hamburger button {
         background:none;
@@ -368,6 +369,10 @@ header nav .nav-tools span.icon{
     }
     header nav .nav-tools span.icon {
         display:none;
+    }
+    .nav-tools>p{
+       margin-top: 0.8em;
+       margin-bottom: 0.25em;
     }
   
 }
