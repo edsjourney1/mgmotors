@@ -344,3 +344,24 @@ header nav .nav-tools span.icon{
   padding: 15px 8px;
   border-radius: 0 4px 4px 0;
 }
+/* Mobile Nav CSS */
+@media screen and (max-width: 901px) {
+     header nav {
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+    header nav .nav-hamburger {
+    grid-column: 4;
+    width: 40px;
+    background: rgba(25,25,25,.8);
+    border-radius: 4px;
+    padding: 5px;
+    }
+    header .nav-brand {
+            grid-column: 1;
+    }
+    header nav .nav-tools span.icon {
+        display:none;
+    }
+  
+}
+
