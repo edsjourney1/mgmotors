@@ -355,6 +355,13 @@ header nav .nav-tools span.icon{
     background: rgba(25,25,25,.8);
     border-radius: 4px;
     padding: 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:auto  
+    }
+    header nav .nav-hamburger button {
+        background:none;
     }
     header .nav-brand {
             grid-column: 1;
