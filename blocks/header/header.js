@@ -163,4 +163,14 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  setTimeout( function() {
+  //window.load(function () {
+    let mobileSearch = document.createElement('div');
+    mobileSearch.classList.add('mobile-search');
+    mobileSearch.innerHTML = `<input type="text" id="searchInput" name="searchInput" class="form-control searchInput" placeholder="Search" aria-label="search input">`;
+    let searchIcon = document.getElementsByClassName('icon-search');
+    mobileSearch.append(searchIcon[0]);
+    nav.append(mobileSearch);
+  }, 2000);
 }
