@@ -1,11 +1,13 @@
 footer {
-  background-color: var(--light-color);
+ 
+  background: #000;
+    color: #fff;
   font-size: var(--body-font-size-xs);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
+  max-width: 100%
   padding: 40px 24px 24px;
 }
 
@@ -17,4 +19,30 @@ footer .footer p {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+}
+
+footer h3 {
+  color: #f2f2f2;
+  font-size: .72917vw;
+  text-transform: uppercase;
+  margin-bottom: 2.60417vw;
+  pointer-events: none;
+  position: relative;
+  text-align: left;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+}
+footer a.button.tertiary {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+  color: #e1e1e1;
+  border: 0;
+  font-size: .78125vw;
+}
+footer a.button.tertiary:hover {
+
+  color: #fff;
+  text-decoration: underline;
 }
