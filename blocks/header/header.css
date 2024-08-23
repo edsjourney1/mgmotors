@@ -283,6 +283,7 @@ header nav .nav-sections ul > li > ul > li {
   }
     header nav .nav-sections .default-content-wrapper > ul > li:nth-child(1){
     margin-right: 5px;
+    background: #000;
         
     }
     header nav .nav-sections .default-content-wrapper > ul > li:hover, header nav .nav-sections .default-content-wrapper > ul > li:focus{
