@@ -273,7 +273,7 @@ header nav .nav-sections ul > li > ul > li {
     margin-right: 5px;
         
     }
-    header nav .nav-sections .default-content-wrapper > ul > li:not(nth-child(1)):hover,header nav .nav-sections .default-content-wrapper > ul > li:not(nth-child(1)):focus{
+    header nav .nav-sections .default-content-wrapper > ul > li:hover, header nav .nav-sections .default-content-wrapper > ul > li:focus{
         background: rgba(64, 64, 64, .8);
     }
 
