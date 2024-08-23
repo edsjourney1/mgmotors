@@ -286,6 +286,10 @@ header nav .nav-sections ul > li > ul > li {
     background: #000;
         
     }
+    header nav .nav-sections .default-content-wrapper > ul > li:nth-child(2){
+    border-radius: 4px 0 0 4px;
+        
+    }
     header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):hover, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):focus{
         background: rgba(64, 64, 64, .8);
     }
