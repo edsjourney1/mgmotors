@@ -425,6 +425,7 @@ header nav .nav-tools span.icon{
     padding: 5px;
     }
     header nav[aria-expanded='true'] .mobile-search{
+    display:block;
     position:absolute;
     background: rgba(0, 0, 0, .6980392156862745);
     top: 60px;
