@@ -286,7 +286,7 @@ header nav .nav-sections ul > li > ul > li {
     background: #000;
         
     }
-    header nav .nav-sections .default-content-wrapper > ul > li:not(first-child):hover, header nav .nav-sections .default-content-wrapper > ul > li:not(first-child):focus{
+    header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):hover, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):focus{
         background: rgba(64, 64, 64, .8);
     }
     .mobile-search{
