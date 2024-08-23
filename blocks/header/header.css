@@ -282,7 +282,6 @@ header nav .nav-sections ul > li > ul > li {
     font-size: 0.78125vw;
   }
     header nav .nav-sections .default-content-wrapper > ul > li:nth-child(1){
-    background: rgba(25, 25, 25, .8);
     margin-right: 5px;
         
     }
