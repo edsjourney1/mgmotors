@@ -417,6 +417,18 @@ header nav .nav-tools span.icon{
     left: 0;
     padding: 5px;
     }
+    .mobile-search{
+    position:absolute;
+    background: rgba(0, 0, 0, .6980392156862745);
+    top: 60px;
+    right: 0;
+    left: 0;
+    }
+    .mobile-search input{
+        width:100%;
+        
+    }
+    
   
 }
 
