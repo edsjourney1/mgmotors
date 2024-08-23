@@ -396,6 +396,15 @@ header nav .nav-tools span.icon{
     letter-spacing: 1px;
     
     }
+    header nav[aria-expanded='true'] .nav-sections {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, .6980392156862745);
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 5px;
+    }
   
 }
 
