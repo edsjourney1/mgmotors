@@ -27,7 +27,10 @@ h2 {
   height: 100% !important;
   width: 100%;
 }
-
+.iframe-container .iframe-wrapper h3{
+font-size: var(--heading-font-size-m);
+margin-top: 5px;
+}
 @media (max-width: 991px) {
   .iframe-container {
     width: 72%;
