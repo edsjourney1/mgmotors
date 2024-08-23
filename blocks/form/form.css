@@ -39,6 +39,26 @@
   .form fieldset {
     grid-template-columns: repeat(3, auto);
   }
+  .section.notify-form.form-container {
+    max-width: 1700px;
+    margin: 0 auto;
+    width: 66.66667%;
+}
+  .section.notify-form.form-container  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section.notify-form.form-container  .form .field-wrapper{
+    display: block;
+    width: 50%;
+    margin-top:24px;
+  }
+  .section.notify-form.form-container  .form label{
+    display: block;
+  }
+  .section.notify-form.form-container  .form .field-wrapper.form-checkbox-wrapper{
+    width: 100%;
+ }
 }
 
 .form label,
