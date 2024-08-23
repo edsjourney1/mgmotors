@@ -428,7 +428,7 @@ header nav .nav-tools span.icon{
     position: absolute;
     width: 100%;
     background: rgba(0, 0, 0, .6980392156862745);
-    top: 60px;
+    top: 122px;
     right: 0;
     left: 0;
     padding: 5px;
@@ -437,7 +437,7 @@ header nav .nav-tools span.icon{
     display:block;
     position:absolute;
     background: rgba(0, 0, 0, .6980392156862745);
-    top: 122px;
+    top: 60px;
     right: 0;
     left: 0;
     width: 100%;
