@@ -283,9 +283,6 @@ header nav .nav-sections ul > li > ul > li {
   }
     header nav .nav-sections .default-content-wrapper > ul > li:nth-child(1){
     background: rgba(25, 25, 25, .8);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://www.mgmotor.co.in/content/dam/mgmotor/header-images/mg-img-002.gif");
     margin-right: 5px;
         
     }
