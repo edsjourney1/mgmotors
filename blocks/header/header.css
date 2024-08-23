@@ -437,7 +437,7 @@ header nav .nav-tools span.icon{
     display:block;
     position:absolute;
     background: rgba(0, 0, 0, .6980392156862745);
-    top: 60px;
+    top: 122px;
     right: 0;
     left: 0;
     width: 100%;
@@ -447,10 +447,12 @@ header nav .nav-tools span.icon{
     border-radius: 4px;
     }
     .mobile-search input{
-        position:relative;
-        width:100%;
         background: transparent;
-        
+        border:none;
+        border-radius: 0;
+       border: none;
+       color: #fff;
+      font-family: GillSansLight;
     }
 
     
