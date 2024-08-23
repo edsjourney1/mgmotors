@@ -202,3 +202,29 @@
         padding-right: 18px;
     }
  }
+ 
+ .carousel-container {
+    height: 551px;
+ }
+ main > .section > div {
+    max-width: 100%;
+ }
+ .block.carousel ul {
+    display: block;
+ }
+ .block.carousel .carousel-content-wrapper {
+    padding: 0px;
+ }
+ @media screen and (min-width: 768px) {
+    .block.carousel .items {
+        margin: 0px;
+    }
+}
+.block.carousel .items img {
+    width: 100%;
+    height: 100%;
+}
+.block.carousel .desktop-controls button {
+    z-index: 100;
+}
+
