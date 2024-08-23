@@ -165,8 +165,11 @@ header .nav-brand p{
   margin-right: 5px;
 }
 header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+/*   width: 128px;
+  height: auto; */
+  width: auto;
+  height: 50px;
+  max-width: 170px;
 }
 
 /* sections */
@@ -199,6 +202,10 @@ header nav .nav-sections ul > li > ul {
 
 header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
+}
+
+.mobile-search{
+    display:none;
 }
 
 @media (width >= 900px) {
@@ -417,16 +424,31 @@ header nav .nav-tools span.icon{
     left: 0;
     padding: 5px;
     }
-    .mobile-search{
+    header nav[aria-expanded='true'] .mobile-search{
     position:absolute;
     background: rgba(0, 0, 0, .6980392156862745);
     top: 60px;
     right: 0;
     left: 0;
+    width: 100%;
+    background: rgba(25, 25, 25, .8);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
     }
     .mobile-search input{
+        position:relative;
         width:100%;
+        background: transparent;
         
+    }
+    .mobile-search input span{
+    position: absolute;
+    top: 0;
+    right: 17px;
+    width: 20px;
+    bottom: 0;
+    margin: auto;
     }
     
   
