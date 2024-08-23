@@ -35,7 +35,7 @@
   }
 }
 
-@media (width >= 900px) {
+@media (width >= 992px) {
   .form fieldset {
     grid-template-columns: repeat(3, auto);
   }
@@ -54,6 +54,9 @@
     margin-top:30px;
     padding: 0;    
   }  
+  .section.two-col-form.form-container  .form .field-wrapper.form-submit {
+    width: 100%;
+  }
   .section.two-col-form.form-container  .form .field-wrapper.form-checkbox-wrapper{
     width: 100%;
  }
@@ -109,18 +112,12 @@
 }
 
 @media (width >= 600px) {
-  .form input,
-  .form select,
-  .form textarea {
-    max-width: 50vw;
-  }
-
   .form .button {
     max-width: max-content;
   }
 }
 
-@media (width >= 900px) {
+@media (width >= 991px) {
   .form input,
   .form select,
   .form textarea {
@@ -134,10 +131,13 @@
   gap: 1ch;
 }
 
-.form label[data-required]::after {
+.form .field-wrapper[data-required] label::after {
   content: '*';
   color: firebrick;
-  margin-inline-start: 1ch;
+  margin-inline-start: 0.5ch;
+}
+.form .form-checkbox-wrapper.field-wrapper[data-required] label::after {
+  content: none;
 }
 
 .form .toggle-wrapper .switch {
@@ -221,6 +221,7 @@
 .section.two-col-form.form-container .form .field-wrapper {
   padding: 0 15px;
   position: relative;
+  display: block;
 }
 .section.two-col-form.form-container .form .field-wrapper.form-privacy {
   margin-top: 15px;
@@ -238,10 +239,27 @@
 }
 .form-submit .btn {
   background-color: #cf2230;
-  padding: 5px 10px;
+  padding: 6px 15px;
   color: #fff;
   font-size: 14px;
   border-radius: 6px;
   font-weight: 500;
-  font-family: roboto;
+  font-family: roboto-medium;
+  transition: all 1s linear;
+}
+.form-submit .btn:hover, .form-submit .btn:active, .form-submit .btn:focus {
+  background-color: #000;
+}
+
+@media (max-width: 991px) {
+  .section.two-col-form.form-container {
+    width: 85%;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .section.two-col-form.form-container {
+    width: 100%;
+  }
 }
