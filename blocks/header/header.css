@@ -276,6 +276,9 @@ header nav .nav-sections ul > li > ul > li {
     header nav .nav-sections .default-content-wrapper > ul > li:hover, header nav .nav-sections .default-content-wrapper > ul > li:focus{
         background: rgba(64, 64, 64, .8);
     }
+    .mobile-search{
+        display:none;
+    }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;

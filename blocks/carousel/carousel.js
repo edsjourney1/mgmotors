@@ -21,7 +21,7 @@ function adjustWidthAndControls(block, carousel, ...controls) {
       // set the width only on desktop
       const maxItems = Math.floor((containerWidth - 100) / (itemsWidth / carousel.children.length));
       const width = maxItems * itemWidth + gap * (maxItems - 1);
-      carousel.style.width = `${width}px`;
+      //carousel.style.width = `${width}px`;
     } else {
       // remove on mobile viewports
       delete carousel.style.width;
@@ -149,7 +149,8 @@ export default function decorate(block) {
     let picture = li.querySelector('picture');
     if (picture) {
       const img = picture.lastElementChild;
-      const newPicture = createOptimizedPicture(img.src, img.alt, false, [{ width: '370' }]);
+      //const newPicture = createOptimizedPicture(img.src, img.alt, false, [{ width: '370' }]);
+      const newPicture = picture;
       picture.replaceWith(newPicture);
       picture = newPicture;
     }
