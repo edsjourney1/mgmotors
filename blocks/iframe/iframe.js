@@ -10,3 +10,12 @@ export default async function decorate(block) {
   iframe.setAttribute('frameborder', 0);
   block.replaceChildren(iframe);
 }
+document.querySelectorAll('.youtube-w-title .iframe-wrapper').forEach((iframeWrapper) => {
+  // Get the next sibling element
+  const nextElement = iframeWrapper.nextElementSibling;
+  
+  // Check if the next sibling is a .default-content-wrapper
+  if (nextElement && nextElement.classList.contains('default-content-wrapper')) {
+    iframeWrapper.appendChild(nextElement);
+  }
+});
