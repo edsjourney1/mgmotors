@@ -165,12 +165,12 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   setTimeout( function() {
-  //window.load(function () {
     let mobileSearch = document.createElement('div');
     mobileSearch.classList.add('mobile-search');
     mobileSearch.innerHTML = `<input type="text" id="searchInput" name="searchInput" class="form-control searchInput" placeholder="Search" aria-label="search input">`;
     let searchIcon = document.getElementsByClassName('icon-search');
-    mobileSearch.append(searchIcon[0]);
+    let searchEle = searchIcon[0].cloneNode(true);
+    mobileSearch.append(searchEle);
     nav.append(mobileSearch);
   }, 2000);
 }
