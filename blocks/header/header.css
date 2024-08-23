@@ -368,12 +368,10 @@ header nav .nav-tools span.icon{
     header nav .nav-tools span.icon {
         display:none;
     }
-    header nav p{
-       margin-top: 0.8em;
-       margin-bottom: 0.25em;
-    }
+ 
     header nav .nav-tools a {
         font-size: 13px;
+        top:0;
     }
     header nav .nav-sections ul {
     padding: 0;
