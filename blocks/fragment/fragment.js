@@ -10,6 +10,7 @@ import {
 
 import {
   loadBlocks,
+  loadSections,
 } from '../../scripts/aem.js';
 
 /**

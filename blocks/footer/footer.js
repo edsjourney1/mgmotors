@@ -1,5 +1,5 @@
-// import { getMetadata } from '../../scripts/aem.js';
-// import { loadFragment } from '../fragment/fragment.js';
+import { getMetadata } from '../../scripts/aem.js';
+ import { loadFragment } from '../fragment/fragment.js';
 
 // /**
 //  * loads and decorates the footer
@@ -18,7 +18,7 @@
 
 //   block.append(footer);
 // }
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+ import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
 
 /**
  * loads and decorates the footer
@@ -31,6 +31,8 @@ export default async function decorate(block) {
 
   const footerPath = cfg.footer || '/footer';
   const resp = await fetch(`${footerPath}.plain.html`);
+  const fragment = await loadFragment(footerPath);
+
   const html = await resp.text();
   const footer = document.createElement('div');
   footer.innerHTML = html;
