@@ -296,7 +296,7 @@
     background-color: #fff;
 }
 
-main > .section > div {
+main > .section > div.carousel-wrapper {
     padding: 0px !important;
     margin: 0px !important;
     max-width: 100%;
