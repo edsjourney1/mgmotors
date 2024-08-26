@@ -300,9 +300,40 @@ header nav .nav-sections ul > li > ul > li {
     font-size: 14px;
     padding-left: 7px;
     }
-
+/* Search */
     .mobile-search{
         display:none;
+    }
+    .mobile-search.active {
+        display: block;
+        position: absolute;
+        top: calc(100% + 0px);
+        width: 250px;
+        background: rgba(0, 0, 0, .6980392156862745);
+        padding: 10px; 
+    }
+    .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+    .mobile-search input span{
+        position: absolute;
+        top: 0;
+        right: 17px;
+        width: 20px;
+        bottom: 0;
+        margin: auto;
     }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
