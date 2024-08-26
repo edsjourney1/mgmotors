@@ -206,6 +206,40 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+/* Search */
+.mobile-search{
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    right:0;
+    width: 250px;
+    background: rgba(0, 0, 0, .6980392156862745);
+    padding: 10px; 
+}
+.mobile-search .form-control {
+    background: rgba(25, 25, 25, .8);
+    border: none;
+    color: #fff;
+    font-family: GillSansLight;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out;
+}
+.mobile-search .icon-search svg{
+    position: absolute;
+    top: 0;
+    right: 17px;
+    width: 20px;
+    bottom: 0;
+    margin: auto;
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -289,39 +323,7 @@ header nav .nav-sections ul > li > ul > li {
     font-size: 14px;
     padding-left: 7px;
     }
-/* Search */
-.mobile-search{
-    display: block;
-    position: absolute;
-    top: calc(100% + 5px);
-    right:0;
-    width: 250px;
-    background: rgba(0, 0, 0, .6980392156862745);
-    padding: 10px; 
-}
-.mobile-search .form-control {
-    background: rgba(25, 25, 25, .8);
-    border: none;
-    color: #fff;
-    font-family: GillSansLight;
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    appearance: none;
-    border-radius: .375rem;
-    transition: border-color .15s ease-in-out;
-}
-.mobile-search .icon-search svg{
-    position: absolute;
-    top: 0;
-    right: 17px;
-    width: 20px;
-    bottom: 0;
-    margin: auto;
-}
+
 
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -403,6 +405,9 @@ header nav .nav-tools p > .icon{
 }
 /* Mobile Nav CSS */
 @media screen and (max-width: 901px) {
+    header nav{
+        padding: 0 5px;
+    }
     
     header nav .nav-hamburger {
     grid-column: 4;
@@ -429,6 +434,7 @@ header nav .nav-tools p > .icon{
     header nav .nav-tools a {
         font-size: 13px;
         top:0;
+        padding:10px;
     }
     header nav .nav-sections ul {
     padding: 0;
@@ -476,7 +482,7 @@ header nav .nav-tools p > .icon{
     margin: 5px 0;
     border-radius: 4px;
     }
-    header nav[aria-expanded='true'] .mobile-search input{
+    .mobile-search input{
     display: block;
     width: 100%;
     background: rgba(25, 25, 25, .8);
