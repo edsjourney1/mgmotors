@@ -295,6 +295,7 @@ header nav .nav-sections ul > li > ul > li {
         display: block;
         position: absolute;
         top: calc(100% + 0px);
+        right:0;
         width: 250px;
         background: rgba(0, 0, 0, .6980392156862745);
         padding: 10px; 
@@ -314,7 +315,7 @@ header nav .nav-sections ul > li > ul > li {
     border-radius: .375rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-    .mobile-search input span{
+    .mobile-search input .icon-search{
         position: absolute;
         top: 0;
         right: 17px;
