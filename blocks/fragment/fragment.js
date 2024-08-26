@@ -11,6 +11,7 @@ import {
 import {
   loadBlocks,
   loadSections,
+  getMetadata
 } from '../../scripts/aem.js';
 
 /**

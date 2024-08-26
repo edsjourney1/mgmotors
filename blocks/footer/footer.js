@@ -28,15 +28,17 @@ import { getMetadata } from '../../scripts/aem.js';
 export default async function decorate(block) {
   const cfg = readBlockConfig(block);
   block.textContent = '';
-
-  const footerPath = cfg.footer || '/footer';
-  const resp = await fetch(`${footerPath}.plain.html`);
-  const fragment = await loadFragment(footerPath);
   const footerMeta = getMetadata('footer');
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
+ // const footerPath = cfg.footer || '/footer';
+  const resp = await fetch(`${footerPath}`);
+  const fragment = await loadFragment(footerPath);
+  //const footerMeta = getMetadata('footer');
 
   const html = await resp.text();
   const footer = document.createElement('div');
-  footer.innerHTML = html;
+  console.log(fragment);
+  Array.from(fragment.children).forEach(child => footer.appendChild(child));
   await decorateIcons(footer);
   block.append(footer);
 }
