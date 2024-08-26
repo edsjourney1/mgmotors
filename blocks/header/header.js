@@ -169,7 +169,7 @@ export default async function decorate(block) {
     mobileSearch.classList.add('mobile-search');
     mobileSearch.innerHTML = `<input type="text" id="searchInput" name="searchInput" class="form-control searchInput" placeholder="Search" aria-label="search input">`;
     let searchIcon = document.getElementsByClassName('icon-search');
-    searchIcon.classList.remove(".icon");
+    searchIcon.classList.remove("icon");
     let searchEle = searchIcon[0].cloneNode(true);
     mobileSearch.append(searchEle);
     nav.append(mobileSearch);
