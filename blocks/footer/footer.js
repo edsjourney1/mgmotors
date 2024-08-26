@@ -32,6 +32,7 @@ export default async function decorate(block) {
   const footerPath = cfg.footer || '/footer';
   const resp = await fetch(`${footerPath}.plain.html`);
   const fragment = await loadFragment(footerPath);
+  const footerMeta = getMetadata('footer');
 
   const html = await resp.text();
   const footer = document.createElement('div');
