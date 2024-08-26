@@ -320,10 +320,7 @@ header nav .nav-sections ul > li > ul > li {
     bottom: 0;
     margin: auto;
 }
-.mobile-search .icon{
-    width:0;
-    height:0;
-}
+
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
@@ -383,7 +380,7 @@ header nav .nav-tools a{
     position: relative;
     top: -8px;
 }
-header nav .nav-tools span.icon{
+header nav .nav-tools p span.icon{
   width: 40px;
   height: 55px;
   margin-top:6px;
