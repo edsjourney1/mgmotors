@@ -5,7 +5,7 @@ header .nav-wrapper {
   z-index: 2;
   position: fixed;
   color:var(--white);
-  font-family: 'Gill Sans', sans-serif;
+  font-family: var(--nav-font-family);
 }
 
 header nav {
@@ -20,7 +20,7 @@ header nav {
   max-width: 1248px;
   height: var(--nav-height);
   padding: 0 24px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: var(--nav-font-family);
 
 }
 
