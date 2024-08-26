@@ -182,7 +182,7 @@
 
   const carousel = document.querySelector('.carousel-wrapper');
   const carouselItems = carousel.querySelectorAll('.carousel.block div div');
-  const slideInterval = 7000;
+  const slideInterval = 26000;
   let currentSlide = 0;
   carousel.querySelector('.carousel.block div').classList.add('carousel-slider-wrapper');
 
@@ -202,9 +202,39 @@
       <li class="carousel-indicator" data-slide="0"></li>
       <li class="carousel-indicator" data-slide="1"></li>
   </div>`;
-
+  var mobTabel = document.querySelectorAll(".carousel-container > div > div > div:not(:nth-child(1))");
+  mobTabel.forEach((dom) =>{
+    var slideimage = dom.querySelectorAll(".carousel-slide");
+    slideimage.forEach((imagedom, i) =>{
+      var desktopDom = document.querySelectorAll(".carousel-container > div > div > div .carousel-slide");
+      var imgdom = desktopDom[i].querySelector("picture");
+          imgdom.innerHTML += `<img src="`+imagedom.querySelector('img').getAttribute('src')+`" alt="slide image">`;
+          var imagesClass = desktopDom[i].querySelectorAll("picture img");
+          var imagesClasses = ['desktop','mobile','tablet'];
+          imagesClass.forEach((img, index) =>{
+            if(index == 0){
+              img.classList.add(imagesClasses[index]);
+              img.removeAttribute('height');
+              img.removeAttribute('width');              
+            }
+            if(index == 1){
+              img.classList.add(imagesClasses[index]);
+            }
+            if(index == 2){
+              img.classList.add(imagesClasses[index]);
+            }
+          });
+      });
+      dom.remove();
+    });
+    var picturesrc = document.querySelectorAll('.carousel-slide picture source');
+    picturesrc.forEach((src, i) =>{
+      if(i != 0 && i !=3){
+        src.remove();
+      }
+    });
+    
     const slides = document.querySelectorAll('.carousel-slide');
-    let currentSlide = 0;
     const indicators = document.querySelectorAll('.carousel-indicator');
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');

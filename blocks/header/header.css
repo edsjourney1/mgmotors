@@ -206,19 +206,6 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
-.mobile-search{
-    display:none;
-    position:relative
-}
-.mobile-search input span{
-    position: absolute;
-    top: 0;
-    right: 17px;
-    width: 20px;
-    bottom: 0;
-    margin: auto;
-}
-
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -287,6 +274,7 @@ header nav .nav-sections ul > li > ul > li {
     margin-right: 5px;
     background: #000;
       flex: 0;
+    border: 0;        
     }
     header nav .nav-sections .default-content-wrapper > ul > li:nth-child(2){
     border-radius: 4px 0 0 4px;
@@ -295,16 +283,46 @@ header nav .nav-sections ul > li > ul > li {
     header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):hover, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):focus{
         background: rgba(64, 64, 64, .8);
     }
-    header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child)::after, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child)::after{
+    header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):not(:nth-child(6))::after{
     content: "\f107";
     font-family: FontAwesome;
     font-size: 14px;
     padding-left: 7px;
     }
+/* Search */
+.mobile-search{
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    right:0;
+    width: 250px;
+    background: rgba(0, 0, 0, .6980392156862745);
+    padding: 10px; 
+}
+.mobile-search .form-control {
+    background: rgba(25, 25, 25, .8);
+    border: none;
+    color: #fff;
+    font-family: GillSansLight;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out;
+}
+.mobile-search .icon-search svg{
+    position: absolute;
+    top: 0;
+    right: 17px;
+    width: 20px;
+    bottom: 0;
+    margin: auto;
+}
 
-    .mobile-search{
-        display:none;
-    }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
@@ -364,7 +382,7 @@ header nav .nav-tools a{
     position: relative;
     top: -8px;
 }
-header nav .nav-tools span.icon{
+header nav .nav-tools p > .icon{
   width: 40px;
   height: 55px;
   margin-top:6px;
@@ -442,6 +460,9 @@ header nav .nav-tools span.icon{
     left: 0;
     padding: 5px;
     }
+    .mobile-search{
+        display:none;
+    }
     header nav[aria-expanded='true'] .mobile-search{
     display:block;
     position:absolute;
@@ -455,15 +476,16 @@ header nav .nav-tools span.icon{
     margin: 5px 0;
     border-radius: 4px;
     }
-    .mobile-search input{
-        background: transparent;
-        border:none;
-        border-radius: 0;
-       border: none;
-       color: #fff;
-      font-family: GillSansLight;
-        width:95%;
+    header nav[aria-expanded='true'] .mobile-search input{
+    display: block;
+    width: 100%;
+    background: rgba(25, 25, 25, .8);
+    padding: 10px;
+    position: relative;
+    margin: 5px 0;
+    border-radius: 4px;
     }
+
 
     
   
