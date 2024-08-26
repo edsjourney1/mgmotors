@@ -460,6 +460,9 @@ header nav .nav-tools span.icon{
     left: 0;
     padding: 5px;
     }
+    .mpbile-search{
+        display:none;
+    }
     header nav[aria-expanded='true'] .mobile-search{
     display:block;
     position:absolute;
@@ -473,15 +476,7 @@ header nav .nav-tools span.icon{
     margin: 5px 0;
     border-radius: 4px;
     }
-    .mobile-search input{
-        background: transparent;
-        border:none;
-        border-radius: 0;
-       border: none;
-       color: #fff;
-      font-family: GillSansLight;
-        width:95%;
-    }
+
 
     
   
