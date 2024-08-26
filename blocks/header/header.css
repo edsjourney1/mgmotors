@@ -315,7 +315,7 @@ header nav .nav-sections ul > li > ul > li {
     border-radius: .375rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-    .mobile-search input .icon-search{
+    .icon-search{
         position: absolute;
         top: 0;
         right: 17px;
