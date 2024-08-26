@@ -380,7 +380,7 @@ header nav .nav-tools a{
     position: relative;
     top: -8px;
 }
-header nav .nav-tools p span.icon{
+header nav .nav-tools p > .icon{
   width: 40px;
   height: 55px;
   margin-top:6px;
