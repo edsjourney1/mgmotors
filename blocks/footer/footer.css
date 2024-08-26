@@ -32,7 +32,7 @@ footer h3 {
   font-family: var(--body-font-family);
   font-weight: 400;
 }
-footer a.button.tertiary {
+footer .columns a {
   background: transparent;
   padding: 0;
   margin: 0;
@@ -41,8 +41,33 @@ footer a.button.tertiary {
   border: 0;
   font-size: .78125vw;
 }
-footer a.button.tertiary:hover {
+footer .columns a:hover {
 
   color: #fff;
   text-decoration: underline;
+}
+footer .columns p{
+  margin-bottom: .88542vw;
+  line-height: .9375vw;
+}
+footer .footer-icons ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .footer-icons ul li{
+  list-style: none;
+    display: inline-block;
+    width: 149px;
+    margin-right: 9px;
+}
+footer .footer-icons ul li span{
+  height:auto;
+  width:auto;
+}
+footer .footer-icons ul li span svg{
+ width:149px;
 }
