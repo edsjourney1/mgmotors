@@ -165,9 +165,19 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   setTimeout( function() {
-    let mobileSearch = document.createElement('div');
-    mobileSearch.classList.add('mobile-search');
+    let searchdesktopIcon = document.querySelector("p > .icon-search");
+    let mobileSearch = document.createElement("div");
+    mobileSearch.classList.add("mobile-search");
     mobileSearch.innerHTML = `<input type="text" id="searchInput" name="searchInput" class="form-control searchInput" placeholder="Search" aria-label="search input">`;
+    if (searchdesktopIcon) {
+      searchdesktopIcon.addEventListener("click", () => {
+        let mobileSearch = document.getElementsByClassName("mobile-search");
+        if (mobileSearch.length > 0) {
+          //       // Add class to the first element in the collection
+          mobileSearch[0].classList.add("active");
+        }
+      });
+    }
     let searchIcon = document.getElementsByClassName('icon-search');
     let searchEle = searchIcon[0].cloneNode(true);
     searchEle.classList.remove("icon");
