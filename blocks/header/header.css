@@ -321,7 +321,8 @@ header nav .nav-sections ul > li > ul > li {
     margin: auto;
 }
 .mobile-search .icon{
-    display:none;
+    width:0;
+    height:0;
 }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -473,6 +474,15 @@ header nav .nav-tools span.icon{
     width: 100%;
     background: rgba(25, 25, 25, .8);
     padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    }
+    header nav[aria-expanded='true'] .mobile-search input{
+    display: block;
+    width: 100%;
+    background: rgba(25, 25, 25, .8);
+    padding: 10px;
+    position: relative;
     margin: 5px 0;
     border-radius: 4px;
     }
