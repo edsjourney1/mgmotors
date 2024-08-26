@@ -173,11 +173,15 @@ export default async function decorate(block) {
       searchdesktopIcon.addEventListener("click", () => {
         let mobileSearch = document.getElementsByClassName("mobile-search");
         if (mobileSearch.length > 0) {
-          //       // Add class to the first element in the collection
           mobileSearch[0].classList.add("active");
         }
       });
     }
+    document.addEventListener("click", (event) => {
+    if (!mobileSearch.contains(event.target) && !searchdesktopIcon.contains(event.target)) {
+      mobileSearch.classList.remove("active");
+    }
+   });
     let searchIcon = document.getElementsByClassName('icon-search');
     let searchEle = searchIcon[0].cloneNode(true);
     searchEle.classList.remove("icon");
