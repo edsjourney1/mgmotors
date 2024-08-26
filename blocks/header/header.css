@@ -294,7 +294,7 @@ header nav .nav-sections ul > li > ul > li {
     header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):hover, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):focus{
         background: rgba(64, 64, 64, .8);
     }
-    header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child)::after, header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child)::after{
+    header nav .nav-sections .default-content-wrapper > ul > li:not(:first-child):not(:nth-child(6))::after{
     content: "\f107";
     font-family: FontAwesome;
     font-size: 14px;
