@@ -298,6 +298,11 @@ header nav .nav-sections ul > li > ul > li {
     padding: 10px; 
 }
 .mobile-search .form-control {
+    border-radius: 0;
+    background: rgba(25, 25, 25, .8);
+    border: none;
+    color: #fff;
+    font-family: GillSansLight;
     display: block;
     width: 100%;
     padding: .375rem .75rem;
