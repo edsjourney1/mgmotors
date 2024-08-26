@@ -460,7 +460,7 @@ header nav .nav-tools span.icon{
     left: 0;
     padding: 5px;
     }
-    .mpbile-search{
+    .mobile-search{
         display:none;
     }
     header nav[aria-expanded='true'] .mobile-search{
