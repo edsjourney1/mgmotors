@@ -208,6 +208,9 @@ header nav .nav-sections ul > li > ul > li {
 
 /* Search */
 .mobile-search{
+    display:none;
+}
+.mobile-search.active{
     display: block;
     position: absolute;
     top: calc(100% + 5px);
