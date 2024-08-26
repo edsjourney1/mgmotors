@@ -423,7 +423,7 @@ header nav .nav-tools p > .icon{
     display:flex;
     justify-content:center;
     align-items:center;
-    height: 80%;
+    height: 60%;
     justify-self:end;
     }
     header nav .nav-hamburger button {
