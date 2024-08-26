@@ -407,6 +407,7 @@ header nav .nav-tools p > .icon{
 @media screen and (max-width: 901px) {
     header nav{
         padding: 0 5px;
+        gap: 0 10px;
     }
     
     header nav .nav-hamburger {
@@ -432,7 +433,7 @@ header nav .nav-tools p > .icon{
     }
  
     header nav .nav-tools a {
-        font-size: 13px;
+        font-size: 11px;
         top:0;
         padding:10px;
     }
