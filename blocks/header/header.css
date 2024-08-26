@@ -405,6 +405,9 @@ header nav .nav-tools p > .icon{
 }
 /* Mobile Nav CSS */
 @media screen and (max-width: 901px) {
+    header nav{
+        padding: 0 5px;
+    }
     
     header nav .nav-hamburger {
     grid-column: 4;
@@ -431,6 +434,7 @@ header nav .nav-tools p > .icon{
     header nav .nav-tools a {
         font-size: 13px;
         top:0;
+        padding:10px;
     }
     header nav .nav-sections ul {
     padding: 0;
