@@ -225,7 +225,7 @@ header nav .nav-sections ul > li > ul > li {
     background: rgba(25, 25, 25, .8);
     border: none;
     color: #fff;
-    font-family: GillSansLight;
+    font-family: var(--nav-font-family);
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -235,6 +235,10 @@ header nav .nav-sections ul > li > ul > li {
     appearance: none;
     border-radius: .375rem;
     transition: border-color .15s ease-in-out;
+}
+.mobile-search .form-control:focus{
+    outline:0;
+    box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
 }
 .mobile-search .icon-search svg{
     position: absolute;
