@@ -128,7 +128,7 @@ footer .columns.block.columns-2-cols ul.cta-list {
     font-size: 9px;
     line-height: normal;
   }
-  .columns.columns-8-cols > div > div:not(:first-child) p
+  .columns.columns-8-cols > div > div:not(:first-child) p span
  {
   display: none;
   }
