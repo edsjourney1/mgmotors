@@ -56,6 +56,9 @@
   font-size: 1.042vw;
   flex-basis: 20%;
 }
+.social-section .columns  > div > div:last-child{
+  border-right: 0;
+}
 .social-section .columns-wrapper .columns > div {
   max-width: 1300px;
 }
