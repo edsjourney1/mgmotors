@@ -23,7 +23,11 @@ header nav {
   font-family: var(--nav-font-family);
 
 }
+header nav p{
+    margin-block:0;
+    line-height: 1;
 
+}
 header nav[aria-expanded='true'] {
 /*   grid-template:
     'hamburger brand' var(--nav-height)
@@ -160,7 +164,6 @@ header .nav-brand p{
   margin-right: 5px;
   width: 150px;
   text-align: center;
-  line-height: 1;
   margin-block:0;
 }
 header nav .nav-brand img {
