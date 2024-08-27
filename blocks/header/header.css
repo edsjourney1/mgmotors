@@ -408,7 +408,9 @@ header nav .nav-tools p > .icon{
         padding: 0 5px;
         gap: 0 10px;
     }
-    
+    header nav p{
+        margin-block:0;
+    }
     header nav .nav-hamburger {
     grid-column: 4;
     width: 40px;
@@ -491,9 +493,5 @@ header nav .nav-tools p > .icon{
     margin: 5px 0;
     border-radius: 4px;
     }
-
-
-    
-  
 }
 
