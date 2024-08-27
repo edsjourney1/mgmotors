@@ -40,5 +40,7 @@ export default async function decorate(block) {
   console.log(fragment);
   Array.from(fragment.children).forEach(child => footer.appendChild(child));
   await decorateIcons(footer);
+
   block.append(footer);
+
 }

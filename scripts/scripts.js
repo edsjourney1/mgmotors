@@ -791,3 +791,4 @@ moveClassToHtmlEl('redesign-v2');
 
 /* EXTERNAL APP CLASS CHECK */
 moveClassToHtmlEl('external-app');
+

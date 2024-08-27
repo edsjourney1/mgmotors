@@ -21,6 +21,7 @@ function loadFooter(footer) {
     footer.append(footerBlock);
     decorateBlock(footerBlock);
     loadBlock(footerBlock);
+    
   }
 }
 
