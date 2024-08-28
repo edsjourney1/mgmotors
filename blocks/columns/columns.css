@@ -82,7 +82,7 @@ main > .section.social-section > div{
 
 .social-section .columns > div > div p:nth-child(2) {
   font-family: GillSans-medium;
-  font-size: 1.2rem; 
+  font-size: 1rem; 
 }
 
 .social-section .columns > div > div p:nth-child(3) {
@@ -109,7 +109,7 @@ main > .section.social-section > div{
     border-right: 0;
   }
   .social-section .columns > div > div p:nth-child(2) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .social-section .columns > div > div p:nth-child(3) {
     font-size: 1rem;
