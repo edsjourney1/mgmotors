@@ -80,13 +80,20 @@ export default async function decorate(block) {
   // });
 
 
-    console.log($(' .columns > div > div    h2'));
+
       $('footer').on("click", ".columns > div > div", function(){
-        console.log(this);
-        $('.columns > div > div').removeClass('active');
-        $('.footersubmenu').hide();
-        $(this).addClass('active')
-        $(this).find('.footersubmenu').show();
+        if($(this).hasClass('active')){
+          console.log('active');
+          $(this).removeClass('active');
+          $('.footersubmenu').hide();
+        }
+        else{
+          $('.columns > div > div').removeClass('active');
+          $('.footersubmenu').hide();
+          $(this).addClass('active')
+          $(this).find('.footersubmenu').show();
+        }
+
       });
 
 }

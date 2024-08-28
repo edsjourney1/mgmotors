@@ -171,4 +171,10 @@ footer .columns.block.columns-2-cols ul.cta-list {
   footer .footer > div{
     padding: 30px 30px 0;
   }
+  footer p.button-container{
+    margin-bottom: 10px;
+  }
+  footer .footer .footer-icons p{
+    margin-bottom:16px;
+  }
 }
