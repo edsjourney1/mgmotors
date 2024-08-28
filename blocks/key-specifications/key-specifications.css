@@ -1,3 +1,7 @@
+.section.mg-motors-spec-accordiontitle.columns-container > div > div > div > div:nth-child(2) > p {
+    text-align: right;
+}
+
 .mg-motors-spec-accordion.section, .mg-motors-spec-accordiontitle.section {
     max-width: 855pt;
     margin: 0 auto !important;
