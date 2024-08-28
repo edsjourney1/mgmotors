@@ -82,18 +82,19 @@ export default async function decorate(block) {
 
 
       $('footer').on("click", ".columns > div > div", function(){
-        if($(this).hasClass('active')){
-          console.log('active');
-          $(this).removeClass('active');
-          $('.footersubmenu').hide();
-        }
-        else{
-          $('.columns > div > div').removeClass('active');
-          $('.footersubmenu').hide();
-          $(this).addClass('active')
-          $(this).find('.footersubmenu').show();
-        }
-
+        if (window.innerWidth < 768) {
+          if($(this).hasClass('active')){
+            console.log('active');
+            $(this).removeClass('active');
+            $('.footersubmenu').hide();
+          }
+          else{
+            $('.columns > div > div').removeClass('active');
+            $('.footersubmenu').hide();
+            $(this).addClass('active')
+            $(this).find('.footersubmenu').show();
+          }
+       }
       });
 
 }
