@@ -33,45 +33,84 @@
 }
 
 /* Social Section */
-.social-section{
+.social-section {
   padding: 24px 0;
 }
-.social-section svg{
-  width:40px;
+
+.social-section svg {
+  width: 40px;
   height: 40px;
 }
-.social-section .columns  > div {
-  gap:0;
-  margin:0 auto;
-  flex-wrap: wrap;
 
-}
-.social-section .columns  > div > div{
+.social-section .columns > div {
   display: flex;
   flex-wrap: wrap;
+  gap: 0;
+  margin: 0 auto;
+}
+
+.social-section .columns > div > div {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-right: 2px solid #e1e1e1;
-  font-size: 1.042vw;
   flex-basis: 20%;
-}
-.social-section .columns  > div > div:last-child{
-  border-right: 0;
-}
-.social-section .columns-wrapper .columns > div {
-  max-width: 1300px;
-}
-.social-section .columns  > div > div > p{
-  margin: 4.808px 0 0;
-  color: #000;
-}
-.social-section .columns  > div > div p:nth-child(2){
-  font-family: GillSans-medium;
- 
-}
-.social-section .columns  > div > div p:nth-child(3){
-  color: #6e6e6e;
-  font-size: 0.875em;
+  box-sizing: border-box;
 }
 
+.social-section .columns > div > div:last-child {
+  border-right: 0;
+}
+
+.social-section .columns-wrapper .columns > div {
+  width: 100%;
+  max-width: 1300px;
+}
+
+.social-section .columns > div > div > p {
+  margin: 4.808px 0 0;
+  color: #000;
+  line-height: 1.5;
+}
+
+.social-section .columns > div > div p:nth-child(2) {
+  font-family: GillSans-medium;
+  font-size: 1.2rem; 
+}
+
+.social-section .columns > div > div p:nth-child(3) {
+  color: #6e6e6e;
+  font-size: 0.7em; 
+}
+
+@media (max-width>= 900px) {
+  .social-section .columns > div > div {
+    flex-basis: 33.33%; 
+    border-right: none;
+    margin-bottom: 3.02725vw;
+  }
+
+  .social-section .columns > div > div:nth-child(3) {
+    border-right: 0;
+  }
+  .social-section .columns > div > div p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  .social-section .columns > div > div p:nth-child(3) {
+    font-size: 1rem;
+  }
+  .social-section .columns > div > div:nth-child(5) {
+    border-right: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .social-section .columns > div > div p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .social-section .columns > div > div p:nth-child(3) {
+    font-size: 13px;
+  }
+}
