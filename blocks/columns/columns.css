@@ -128,3 +128,7 @@ main > .section.social-section > div{
     font-size: 13px;
   }
 }
+
+.section.mg-motors-spec-accordiontitle.columns-container > div > div > div > div:nth-child(2) > p {
+    text-align: right;
+}
