@@ -84,7 +84,7 @@
   font-size: 0.7em; 
 }
 
-@media (max-width>= 900px) {
+@media (max-width: 900px) {
   .social-section .columns > div > div {
     flex-basis: 33.33%; 
     border-right: none;
