@@ -63,9 +63,9 @@
     color: #cf2230;
 }
 
-.mg-motors-spec-accordion .columns-wrapper > .columns > div:nth-child(2) > div,
-.mg-motors-spec-accordion .columns-wrapper > .columns > div:nth-child(3) > div,
-.mg-motors-spec-accordion .columns-wrapper > .columns > div:nth-child(4) > div {
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div:nth-child(2) > div,
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div:nth-child(3) > div,
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div:nth-child(4) > div {
     text-align: center;
     max-width: 64%;
     display: flex;
@@ -76,7 +76,7 @@
     left: -1px;
 }
 
-.mg-motors-spec-accordion .columns-wrapper > .columns > div > div > p:nth-child(2) {
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div > div > p:nth-child(2) {
     background-color: #fff;
     color: #000;
     border-top-right-radius: 10px;
@@ -86,7 +86,7 @@
     font-weight: 700;
 }
 
-.mg-motors-spec-accordion .columns-wrapper > .columns > div > div > p:nth-child(2)::before {
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div > div > p:nth-child(2)::before {
     content: "\25CF";
     font-size: 95%;
     position: absolute;
@@ -97,7 +97,7 @@
     color: #fff;
 }
 
-.mg-motors-spec-accordion .columns-wrapper > .columns > div > div > p:nth-child(2)::after {
+.mg-motors-spec-accordion .key-specifications-wrapper > .key-specifications > div > div > p:nth-child(2)::after {
     content: " ";
     display: block;
     position: absolute;
@@ -110,15 +110,15 @@
     margin: auto;
 }
 
-.mg-motors-spec-accordion .columns-wrapper .columns picture {
+.mg-motors-spec-accordion .key-specifications-wrapper .key-specifications picture {
     display: inline-block;
 }
 
-.mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col {
+.mg-motors-spec-accordion .key-specifications-wrapper .key-specifications .columns-img-col {
     position: relative;
 }
 
-.mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col picture {
+.mg-motors-spec-accordion .key-specifications-wrapper .key-specifications .columns-img-col picture {
     position: absolute;
     top: 52%;
     right: 0;
