@@ -1,4 +1,4 @@
-.section.mg-motors-spec-accordiontitle.columns-container > div > div > div > div:nth-child(2) > p {
+.section.mg-motors-spec-accordiontitle.key-specifications-container > div > div > div > div:nth-child(2) > p {
     text-align: right;
 }
 
@@ -7,13 +7,13 @@
     margin: 0 auto !important;
 }
 
-.mg-motors-spec-accordion.columns-container {
+.mg-motors-spec-accordion.key-specifications-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.mg-motors-spec-accordion .columns-wrapper,
+.mg-motors-spec-accordion .key-specifications-wrapper,
 .mg-motors-spec-accordion .accordion-wrapper {
     width: 50%;
     box-sizing: border-box;
@@ -21,7 +21,7 @@
     margin-top: 0;
 }
 
-.mg-motors-spec-accordion .columns-wrapper .columns.block.columns-1-cols {
+.mg-motors-spec-accordion .key-specifications-wrapper .key-specifications.block {
     border-radius: 10px;
     padding: 0;
     background: rgb(185, 225, 112);
