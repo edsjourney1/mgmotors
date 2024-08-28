@@ -59,7 +59,9 @@
     border-top: 1px solid #dadada;
     background-color: var(--background-color);
   }
- 
+ .faq-section {
+     padding: 48px 0 8px 0;
+ }
   main > .faq-section > div{
     max-width: 1300px;
     padding-inline: 12px;
