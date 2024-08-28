@@ -8,3 +8,4 @@
 //     const newsletterDiv = document.querySelector('.columns.columns-8-cols > div > div:first-child h3');
 //     newsletterDiv.append(newsletterForm);
 // }
+

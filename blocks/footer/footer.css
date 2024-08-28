@@ -28,7 +28,7 @@ footer .footer p {
   }
 }
 
-footer h3 {
+footer h2 {
   color: #f2f2f2;
   font-size: .72917vw;
   text-transform: uppercase;
@@ -124,14 +124,21 @@ footer .columns.block.columns-2-cols ul.cta-list {
   justify-content: end;
 }
 @media (max-width: 767px)  {
-  footer h3, footer .columns a.button, footer .columns a, footer .columns p, footer .footer p{
+  footer h2, footer .columns a.button, footer .columns a, footer .columns p, footer .footer p{
     font-size: 9px;
     line-height: normal;
   }
-  .columns.columns-8-cols > div > div:not(:first-child) p span
+  .columns.columns-8-cols > div > div:not(:first-child) .footersubmenu
  {
   display: none;
   }
+  .columns.columns-8-cols > div > div:not(:first-child).active 
+  {
+    background: hsla(0, 0%, 100%, .1);
+    pointer-events: all;
+    padding: 0 15px;
+    margin: 0;
+   }
   .columns.columns-2-cols > div > .columns-img-col{
     order:2;
   }
@@ -150,7 +157,7 @@ footer .columns.block.columns-2-cols ul.cta-list {
   .columns.block.columns-8-cols > div > div:first-child  p{
     margin-bottom: 8px;
   }
-  .columns.columns-8-cols > div > div:not(:first-child) h3::after {
+  .columns.columns-8-cols > div > div:not(:first-child) h2::after {
     content: "\f107";
    font-family: FontAwesome;
    font-size: 14px;
@@ -158,10 +165,10 @@ footer .columns.block.columns-2-cols ul.cta-list {
    position:absolute;
    right:0
 }
-.columns.columns-8-cols > div > div:not(:first-child) h3{
-  margin-bottom: 1.5rem !important;
-}
-footer .footer > div{
-  padding: 30px 30px 0;
-}
+  .columns.columns-8-cols > div > div:not(:first-child) h2{
+    margin-bottom: 1.5rem !important;
+  }
+  footer .footer > div{
+    padding: 30px 30px 0;
+  }
 }

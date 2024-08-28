@@ -49,31 +49,44 @@ export default async function decorate(block) {
   divs.forEach(div => {
     const footerSubmenu = document.createElement('div');
     footerSubmenu.className = 'footersubmenu';
-    const title = div.querySelector('h3');
-    title.className = 'menuTitle';
+    //  const title = div.querySelector('h2');
+    //  title.className = 'menuTitle';
+  
     const pTags = div.querySelectorAll('p.button-container');
     pTags.forEach(p => {
         footerSubmenu.appendChild(p);
     });
 
     div.appendChild(footerSubmenu);
+  
   });
-  const menuTitles = document.querySelectorAll('.menuTitle');
-  console.log(menuTitles);
-  menuTitles.forEach(title => {
-      title.addEventListener('click', () => {
-        console.log('hello');
-          // Hide all footersubmenu divs
-          document.querySelectorAll('.footersubmenu').forEach(submenu => {
-              submenu.style.display = 'none';
-          });
+  
+  // const menuTitles = document.querySelectorAll('footer .footer  h2');
+  // console.log(menuTitles);
+  // menuTitles.forEach(title => {
+  //     title.addEventListener('click', () => {
+  //       console.log('hello');
+  //         // Hide all footersubmenu divs
+  //         document.querySelectorAll('.footersubmenu').forEach(submenu => {
+  //             submenu.style.display = 'none';
+  //         });
 
-          // Show the clicked footersubmenu
-          const submenu = title.nextElementSibling;
-          if (submenu && submenu.classList.contains('footersubmenu')) {
-              submenu.style.display = 'block';
-          }
+  //         // Show the clicked footersubmenu
+  //         const submenu = title.nextElementSibling;
+  //         if (submenu && submenu.classList.contains('footersubmenu')) {
+  //             submenu.style.display = 'block';
+  //         }
+  //     });
+  // });
+
+
+    console.log($(' .columns > div > div    h2'));
+      $('footer').on("click", ".columns > div > div", function(){
+        console.log(this);
+        $('.columns > div > div').removeClass('active');
+        $('.footersubmenu').hide();
+        $(this).addClass('active')
+        $(this).find('.footersubmenu').show();
       });
-  });
 
 }
