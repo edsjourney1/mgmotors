@@ -221,3 +221,123 @@ main > .section.social-section > div{
     width: 56%;
     z-index: 5;
 }
+
+.emi-calculator {
+  margin-top: 40px !important;
+}
+.emi-calculator .columns {
+  padding: 0 158px 0 92px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.0509804);
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  position: relative;
+}
+.emi-calculator .columns:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background-color: #d1d1db;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: url('../../icons/calculator.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.emi-calculator .columns > div { 
+  position: relative;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.emi-calculator .columns > div > div {
+  width: 33.33%;
+  flex: 0 0 auto;
+  padding: 20px 12px;
+}
+.emi-calculator .columns > div > div p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  font-family: GillSans-regular;
+  margin: 0;
+  padding-bottom: 14px;
+}
+.emi-calculator .columns > div > div h4 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: roboto-medium;
+  margin: 0;
+  position: relative;
+  padding-bottom: 35px;
+}
+.emi-calculator .columns > div > div h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  font-family: roboto-medium;
+  margin: 0;
+}
+.emi-calculator .columns > div > div h4:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  border-bottom: 2px solid #919191;
+}
+.emi-calculator .columns > div > div h4:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: 18px;
+  height: 18px;
+  background-color: #cf2230;
+  border-radius: 20px;
+  z-index: 9;
+}
+.emi-calculator .columns > div > div:first-child > p:last-child, .emi-calculator .columns > div > div:first-child > p:nth-last-child(2), .emi-calculator .columns > div > div:nth-child(2) > p:last-child, .emi-calculator .columns > div > div:nth-child(2) > p:nth-last-child(2), .emi-calculator .columns > div > div:nth-child(3) > p:last-child, .emi-calculator .columns > div > div:nth-child(3) > p:nth-last-child(2) {
+  width: 50%;
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: roboto;
+  padding-bottom: 0;
+}
+.emi-calculator .columns > div > div > p:last-child {
+  text-align: right;
+}
+.emi-calculator .columns > div > div:last-child {
+  position: absolute;
+  right: -158px;
+  width: 158px;
+  padding: 20px;
+}
+.emi-calculator .columns > div > div:nth-child(4), .emi-calculator .columns > div > div:nth-child(5), .emi-calculator .columns > div > div:nth-child(6) {
+  background-color: #fafafa;
+  position: relative;
+}
+.emi-calculator .columns > div > div:nth-child(4):before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 100%;
+  left: -12px;
+  top: 0;
+  background-color: #fafafa;
+}
+.emi-calculator .columns > div > div:last-child p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: GillSans-SemiBold;
+  padding-bottom: 26px;
+}
+.emi-calculator .columns > div > div:last-child h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: roboto-bold;
+}
