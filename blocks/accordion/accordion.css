@@ -59,3 +59,38 @@
     border-top: 1px solid #dadada;
     background-color: var(--background-color);
   }
+
+  .faq-section .accordion details{
+    border:none;
+    border-bottom: 2px solid #e1e1e1 !important;
+    background-color: transparent;
+
+  }
+  .faq-section .accordion details + details{
+    margin-top:0;
+  }
+  .faq-section .accordion details summary{
+    font-size: 1.25vw;
+
+    padding: 1.5625vw 0;
+  }
+  .faq-section .accordion details summary p{
+    margin:0;
+    font-family: GillSans-SemiBold;
+  }
+  .faq-section .accordion details summary::after{
+    width: 10px;
+    height: 10px;
+    border:2px solid #cf2230;
+    border-width: 2px 2px 0 0;
+  }
+  .faq-section .accordion details[open] .accordion-item-body{
+    padding-top: 1.5625vw;
+    padding-bottom: 1.5625vw;
+    -webkit-box-shadow: inset 0 14px 10px -1pc #ccc, inset 0 -14px 10px -1pc #ccc;
+    box-shadow: inset 0 14px 10px -1pc #ccc, inset 0 -14px 10px -1pc #ccc;
+  }
+
+  .faq-section .accordion details .accordion-item-body p{
+margin:0;
+  }
