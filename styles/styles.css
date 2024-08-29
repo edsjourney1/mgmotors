@@ -348,3 +348,13 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+@media (width >= 900px) {
+  main > .section.faq-section , 
+  .section.emi-calculator.columns-container >div,
+  .section.card-carousel-container > div ,
+  .mg-motors-spec-accordion.section, .mg-motors-spec-accordiontitle.section
+  {
+      max-width: 1700px;
+      margin: 0 auto;
+  }
+}
