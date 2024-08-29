@@ -227,6 +227,8 @@ main > .section.social-section > div{
     z-index: 5;
 }
 
+/* calculator section */
+
 .emi-calculator {
   margin-top: 40px !important;
 }
@@ -345,4 +347,54 @@ main > .section.social-section > div{
   font-size: 24px;
   line-height: 36px;
   font-family: roboto-bold;
+}
+@media (max-width: 991px) {
+  .emi-calculator {
+    margin-top: 100px !important;
+  }
+  .emi-calculator .columns {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .emi-calculator .columns:before {
+    width: 83px;
+    height: 53px;
+    top: -53px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    background-size: 30%;
+  }
+  .emi-calculator .columns > div > div {
+    width: 100%;
+    padding: 20px 20px 5px 20px;
+  }
+  .emi-calculator .columns > div > div:first-child {
+    padding-top: 40px;
+  }
+  .emi-calculator .columns > div > div:nth-child(3) {
+    padding-bottom: 15px;
+  }
+  .emi-calculator .columns > div > div:nth-child(4) {
+    padding-top: 40px;
+  }
+  .emi-calculator .columns > div > div:nth-child(6) {
+    padding-bottom: 40px;
+  }
+  .emi-calculator .columns > div > div:nth-child(4)::before {
+    content: none;
+  }
+  .emi-calculator .columns > div > div:last-child {
+    padding: 35px 20px 15px;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+  .emi-calculator .columns > div > div:nth-child(4), .emi-calculator .columns > div > div:nth-child(5), .emi-calculator .columns > div > div:nth-child(6), .emi-calculator .columns > div > div:nth-child(7) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
