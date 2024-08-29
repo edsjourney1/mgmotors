@@ -399,19 +399,20 @@ main > .section.social-section > div{
 
 
 
-.two-colcarousel .li {
+.two-colcarousel li {
   float: left;
   width: 25%;
   padding: 10px;
+  list-style: none;
 }
 
 /* Style the images inside the grid */
-.two-colcarousel .li img {
+.two-colcarousel li img {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.two-colcarousel .li img:hover {
+.two-colcarousel li img:hover {
   opacity: 1;
 }
 
@@ -425,7 +426,7 @@ main > .section.social-section > div{
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .main-image {
   position: relative;
-  display: none;
+
 }
 
 /* Expanding image text */

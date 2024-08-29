@@ -9,3 +9,16 @@
 //     newsletterDiv.append(newsletterForm);
 // }
 
+var list = document.querySelectorAll('.two-colcarousel li img');
+for (var i=0; i<list.length; i++) {
+    list[i].addEventListener('click', carouselClick(list[i]), false);
+}
+function carouselClick(e)
+{
+    var expandImg = document.querySelector('.main-image img');
+   
+    expandImg.src = e.src;
+   
+    expandImg.style.display = "block";
+
+  };
