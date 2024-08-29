@@ -22,6 +22,22 @@
 //     expandImg.style.display = "block";
 
 //   };
+//Siva - Tabs card carousel - changes 
+var tabslist = document.querySelectorAll('.tabs-tab');
+tabslist.forEach(function(tabs, index) {
+    
+        tabs.addEventListener('click', function(index) {
+            var split=tabs.id.split('tab-tab')[1];
+            var splitdiv ='.tabpanel-tab'+ split + ' .columns-2-cols > div';
+            document.querySelectorAll('[class*="tabpanel-tab"]').forEach(function(div, index){
+                div.classList.add('hidden');});
+             document.querySelector(splitdiv ).classList.remove('hidden');
+            document.querySelector('.tabpanel-tab'+ split  ).classList.remove('hidden');
+            
+        });
+    
+});
+
 
 var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
 divs.forEach(function(div, index) {
