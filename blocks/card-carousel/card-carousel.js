@@ -43,7 +43,6 @@ export default function decorate(block) {
       }
 
       if (pictures.length === 1 && anchors.length === 0) {
-        div.classList.add('onlyOne');
         while (div.firstChild) {
           wrapperElement.appendChild(div.firstChild);
         }
