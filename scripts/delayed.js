@@ -9,16 +9,38 @@
 //     newsletterDiv.append(newsletterForm);
 // }
 
-var list = document.querySelectorAll('.two-colcarousel li img');
-for (var i=0; i<list.length; i++) {
-    list[i].addEventListener('click', carouselClick(list[i]), false);
-}
-function carouselClick(e)
-{
-    var expandImg = document.querySelector('.main-image img');
-   
-    expandImg.src = e.src;
-   
-    expandImg.style.display = "block";
+// var list = document.querySelectorAll('.two-colcarousel li img');
+// for (var i=0; i<list.length; i++) {
+//     list[i].addEventListener('click', carouselClick);
+// }
+// function carouselClick(e)
+// {
+//     var expandImg = document.querySelector('.main-image img');
+//    var imgSrc = document.querySelector('.main-image source ');
+//    imgSrc.srcset = e.target.src;
+//     expandImg.src = e.target.src;
+//     expandImg.style.display = "block";
 
-  };
+//   };
+
+    var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
+    divs.forEach(function(div, index) {
+        if (index !== 0) {
+            div.classList.add('hidden');
+        }
+    });
+
+document.querySelectorAll('.two-colcarousel li img').forEach(function(image, index) {
+    
+    image.addEventListener('click', function() {
+        var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
+       // divs[index].classList.toggle('hidden');
+       divs.forEach(function(div, i) {
+        if (i === index) {
+            div.classList.remove('hidden');
+        } else {
+            div.classList.add('hidden');
+        }
+    });
+    });
+});

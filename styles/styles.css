@@ -370,3 +370,4 @@ main .section.highlight {
   padding-top: 14vw;
   background-image:url('../files/comet-back.webp');
 }
+.hidden{display:none!important;}
