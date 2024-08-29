@@ -1,11 +1,11 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 
 function updateActiveSlide(slide) {
-  const block = slide.closest('.comet-hero .carousel');
+  const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
   block.dataset.activeSlide = slideIndex;
 
-  const slides = block.querySelectorAll('.comet-hero .carousel-slide');
+  const slides = block.querySelectorAll('.carousel-slide');
 
   slides.forEach((aSlide, idx) => {
     aSlide.setAttribute('aria-hidden', idx !== slideIndex);
@@ -18,7 +18,7 @@ function updateActiveSlide(slide) {
     });
   });
 
-  const indicators = block.querySelectorAll('.comet-hero .carousel-slide-indicator');
+  const indicators = block.querySelectorAll('.carousel-slide-indicator');
   indicators.forEach((indicator, idx) => {
     if (idx !== slideIndex) {
       indicator.querySelector('button').removeAttribute('disabled');
@@ -29,13 +29,13 @@ function updateActiveSlide(slide) {
 }
 
 function showSlide(block, slideIndex = 0) {
-  const slides = block.querySelectorAll('.comet-hero .carousel-slide');
+  const slides = block.querySelectorAll('.carousel-slide');
   let realSlideIndex = slideIndex < 0 ? slides.length - 1 : slideIndex;
   if (slideIndex >= slides.length) realSlideIndex = 0;
   const activeSlide = slides[realSlideIndex];
 
   activeSlide.querySelectorAll('a').forEach((link) => link.removeAttribute('tabindex'));
-  block.querySelector('.comet-hero .carousel-slides').scrollTo({
+  block.querySelector('.carousel-slides').scrollTo({
     top: 0,
     left: activeSlide.offsetLeft,
     behavior: 'smooth',
@@ -43,7 +43,7 @@ function showSlide(block, slideIndex = 0) {
 }
 
 function bindEvents(block) {
-  const slideIndicators = block.querySelector('.comet-hero .carousel-slide-indicators');
+  const slideIndicators = block.querySelector('.carousel-slide-indicators');
   if (!slideIndicators) return;
 
   slideIndicators.querySelectorAll('button').forEach((button) => {
@@ -65,7 +65,7 @@ function bindEvents(block) {
       if (entry.isIntersecting) updateActiveSlide(entry.target);
     });
   }, { threshold: 0.5 });
-  block.querySelectorAll('.comet-hero .carousel-slide').forEach((slide) => {
+  block.querySelectorAll('.carousel-slide').forEach((slide) => {
     slideObserver.observe(slide);
   });
 }
