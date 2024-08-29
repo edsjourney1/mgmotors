@@ -65,11 +65,11 @@
     padding-inline: 12px;
     margin: 0 auto;
  }
-  main > .faq-section > div{
+/*   main > .faq-section > div{
     max-width: 1300px;
     padding-inline: 12px;
     margin: 0 auto;
-  }
+  } */
   .faq-section h2{
     font-family: GillSans-SemiBold;
     font-size: 2.08333vw;
