@@ -23,18 +23,17 @@
 
 //   };
 
-    var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
-    divs.forEach(function(div, index) {
-        if (index !== 0) {
-            div.classList.add('hidden');
-        }
-    });
+var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
+divs.forEach(function(div, index) {
+    if (index !== 0) {
+        div.classList.add('hidden');
+    }
+});
 
-document.querySelectorAll('.two-colcarousel li img').forEach(function(image, index) {
+document.querySelectorAll('.main-image li img').forEach(function(image, index) {
     
     image.addEventListener('click', function() {
         var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
-       // divs[index].classList.toggle('hidden');
        divs.forEach(function(div, i) {
         if (i === index) {
             div.classList.remove('hidden');
