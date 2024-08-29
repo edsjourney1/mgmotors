@@ -167,21 +167,44 @@
     line-height: 50%;
     color: #cf2230;
 }
+.faq-section  .accordion-wrapper{
+    max-width: none;
+  
 
+}
 @media (max-width: 900px) {
   main > .faq-section > div{
     max-width: 720px;
-    padding-inline: 12px;
+  
   }
   .faq-section h2{
     font-size: 28px;
   }
   .faq-section .accordion details summary p{
-    font-size: 20px;
+    font-size: 26px;
+    line-height: 31px;
+    padding-right: 40px;
   }
   .faq-section .accordion details .accordion-item-body p{
-    font-size: 16px;
+    font-size: 5vw;
   }
-
+  .faq-section .accordion details[open] .accordion-item-body{
+    padding-top: 5.55556vw;
+    padding-bottom: 5.55556vw;
+  }
+    main > .faq-section > div{
+        padding:0;
+  }
+  .faq-section .accordion details summary{
+    padding: 26px 0;
+  }
 }
-
+@media (min-width: 1900px) {
+    main > .section.faq-section { 
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+    main > .section.faq-section > div{
+        padding: 0;
+    }
+}
