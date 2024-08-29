@@ -1,0 +1,48 @@
+.button-container,
+.load-more-listing div:first-child {
+    display: none;
+}
+
+.load-more-listing {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+main>.section.load-more-listing-container {
+    margin: 40px 0 !important;
+}
+
+.load-more-listing-container h2 {
+    font-size: 20px;
+    color: #000;
+    margin: 0 0 15px;
+}
+
+.load-more-listing a {
+    color: #2379c5;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
+}
+.section.load-more-listing-container button {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Roboto-Medium;
+    padding: 8px 18px;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    margin: 20px auto;
+    display: block;
+}
+@media (max-width: 991px) {
+    .load-more-listing {
+        display: grid;
+        grid-template-columns: none;
+        grid-gap: 10px;
+        position: relative;
+    }
+}
