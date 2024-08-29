@@ -23,8 +23,9 @@ main>.section.load-more-listing-container {
     color: #2379c5;
     font-size: 14px;
     display: inline-block;
-    font-weight: 300;
+    font-family: GillSans-SemiBold;
 }
+
 .section.load-more-listing-container button {
     border-color: #000;
     background: #000;
