@@ -157,7 +157,6 @@ main > .section.social-section > div{
     background: rgb(185, 225, 112);
     border: 1px solid rgb(185, 225, 112);
     color: rgb(0, 0, 0);
-    z-index: 6;
     position: relative;
     min-height: 675px;
     height: 100%;
@@ -224,7 +223,6 @@ main > .section.social-section > div{
     right: 0;
     transform: translate(47%, 2%);
     width: 56%;
-    z-index: 5;
 }
 
 /* calculator section */
