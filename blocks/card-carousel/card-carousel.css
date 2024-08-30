@@ -4,8 +4,8 @@
 	padding-bottom: 48px;
 	margin-bottom: 0;
 	font-family: 'GillSans-semibold';
-font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
-font-weight: 500;
+	font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
+	font-weight: 500;
 }
 
 .card-carousel-container div.card-carousel.block {
