@@ -391,9 +391,9 @@ main .section.highlight {
 }
 .tab-footer a.button:any-link{
   background-color: #cf2230;
-    padding: 6px 15px;
+  padding: .52083vw 1.5625vw;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.04167vw;
     border-radius: 6px;
     font-weight: 500;
     font-family: roboto-medium;
@@ -402,6 +402,15 @@ main .section.highlight {
 .tab-footer p.button-container{
   text-align: center;
 }
+.tab-section h2{
+  font-size: 2.08333vw;
+    color: #cf2230;
+    font-family: 'GillSans-semibold';
+    text-align: center;
+    padding-bottom: 3.125vw;
+    margin: 0;
+}
+.tab-section{padding: 3.125vw 0}
 .tab-section ul{
   display: flex;
 }
@@ -415,5 +424,6 @@ main .section.highlight {
     margin-bottom: 0;
     font-family: 'GillSans-semibold';
     font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
+    font-size: 2.08333vw;
     font-weight: 500;
 }

@@ -140,9 +140,9 @@ main > .section.social-section > div{
 
 .mg-motors-spec-accordion .default-content-wrapper .button-container .button {
     background-color: #cf2230;
-    padding: 6px 15px;
+    padding: .52083vw 1.5625vw;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.04167vw;
     border-radius: 6px;
     font-weight: 500;
     font-family: roboto-medium;
