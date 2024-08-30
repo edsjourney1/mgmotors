@@ -55,16 +55,31 @@ document.querySelectorAll('.main-image li img').forEach(function(image, index) {
         });
     });
  });
-document.querySelectorAll('.tab-section .default-content-wrapper ul li').forEach(function(tab, index) {
+document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
         var content = tab.textContent.toLowerCase();
         // Hide all tab panels
-        document.querySelectorAll('.tab-content').forEach(function(panel) {
+        document.querySelectorAll('.has-it-all-cont').forEach(function(panel) {
             panel.style.display = 'none';
         });
 
         // Show the corresponding tab panel
-        var targetPanel = document.querySelector('.tab-content.' + content );
+        var targetPanel = document.querySelector('.has-it-all-cont' + content );
         targetPanel.style.display = 'block';
     });
 });
+
+document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(tab, index) {
+    tab.addEventListener('click', function() {
+        var content = tab.textContent.toLowerCase();
+        // Hide all tab panels
+        document.querySelectorAll('.accessories-cont').forEach(function(panel) {
+            panel.style.display = 'none';
+        });
+
+        // Show the corresponding tab panel
+        var targetPanel = document.querySelector('.accessories-cont' + content );
+        targetPanel.style.display = 'block';
+    });
+});
+
