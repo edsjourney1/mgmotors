@@ -410,7 +410,11 @@ main .section.highlight {
     padding-bottom: 3.125vw;
     margin: 0;
 }
-.tab-section{padding: 3.125vw 0}
+main > .section.tab-section{
+  padding: 3.125vw 0;
+  margin: 0;
+  padding-bottom: 0;;
+}
 .tab-section ul{
   display: flex;
 }
@@ -426,4 +430,28 @@ main .section.highlight {
     font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
     font-size: 2.08333vw;
     font-weight: 500;
+}
+.tab-content .columns-wrapper{
+  padding:3.125vw 0;
+}
+.tab-content picture.active::before{
+    content: "";
+    top: 2px;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    border: 2px solid #fff;
+    z-index: 5;
+    border-radius: 6px;
+    opacity: .7;
+}
+.tab-content picture.active::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
