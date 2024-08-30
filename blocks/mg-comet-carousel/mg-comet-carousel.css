@@ -67,7 +67,7 @@
   justify-content: center;
   gap: 6px 12px;
   padding: 12px;
-   background : linear-gradient(180deg, rgb(0, 0, 0) 30%, rgb(185, 225, 112) 0%) !important;
+  
   line-height: 0;
 }
 
