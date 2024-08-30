@@ -57,7 +57,7 @@ document.querySelectorAll('.main-image li img').forEach(function(image, index) {
  });
 document.querySelectorAll('.tab-section .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
-        var content = tab.textContent;
+        var content = tab.textContent.toLowerCase();
         // Hide all tab panels
         document.querySelectorAll('.tab-content').forEach(function(panel) {
             panel.style.display = 'none';
