@@ -179,6 +179,22 @@
     display: flex;
   
 }
+.hero-left>div:nth-child(2) {
+    /* border: 1px solid; */
+    display: block;
+    min-height: 50px;
+    margin: 20px;
+    position: relative;
+}
+.hero-left>div:nth-child(2)::after {
+    content: "";
+    border-left: 2px dotted #919191;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    border-color: black;
+    color: #000;
+}
 @media (max-width: 768px) {
 
     .comet-hero.columns-container.mg-comet-carousel-container {
