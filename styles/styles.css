@@ -371,3 +371,10 @@ main .section.highlight {
   background-image:url('../files/comet-back.webp');
 }
 .hidden{display:none!important;}
+
+
+@media (max-width: 768px) {
+  .section.comet-hero{
+    background-image:url('../files/comet-back-mob.webp');
+  }
+}
