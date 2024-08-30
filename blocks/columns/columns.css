@@ -446,3 +446,22 @@ main > .section.social-section > div{
 }
 
 
+
+
+.tab-section .default-content-wrapper > ul{
+  justify-content: flex-start;
+    border-bottom: none;
+    overflow: hidden;
+    position: relative;
+}
+.tab-section .default-content-wrapper > ul::before{
+  height: 3px;
+  background-color: var(--active-border);
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
