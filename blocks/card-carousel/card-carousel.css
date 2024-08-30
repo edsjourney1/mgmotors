@@ -168,7 +168,7 @@
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-body ul > li {
 	text-align: left;
-  	font-family: roboto;
+  	font-family: roboto-regular;
 	font-size: 1.04167vw;
 	color: #000;
 	margin-bottom: 1.04167vw;
@@ -185,7 +185,7 @@
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-brochure > p {
 	display: flex;
-  	font-family: roboto;
+  	font-family: roboto-regular;
 	font-size: .9375vw;
 	align-items: center;
 	border-top: 1px solid #cececf;
