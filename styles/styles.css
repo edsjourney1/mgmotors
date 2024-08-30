@@ -376,7 +376,10 @@ main .section.highlight {
 @media (max-width: 768px) {
   .section.comet-hero{
     background-image:url('../files/comet-back-mob.webp');
+    background-position-y: top;
+    padding-top: 40vw;
   }
+  
 }
 
 .tab-section ul{

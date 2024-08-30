@@ -205,5 +205,48 @@
     .comet-hero .mg-comet-carousel-wrapper{order:1}
     .comet-hero .columns-wrapper{
         order:2;
+     
     }
+    .mg-comet-carousel-container .columns-wrapper img{
+      height: 6.05449vw;
+    }
+    .mg-comet-carousel-container .columns-wrapper h5,
+    .mg-comet-carousel-container .columns-wrapper h6{
+      font-size:18px;
+    }
+    .mg-comet-carousel-container .columns-wrapper h6{
+      margin-top:0;
+    }
+    .hero-left>div:nth-child(2){
+      margin:10px;
+    }
+}
+
+@media (max-width: 645px) {
+
+  .columns-wrapper h5, .columns-wrapper h6 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .hero-left>div:nth-child(2) {
+    margin: 9px;
+  }
+
+  .mg-comet-carousel-container .columns-wrapper {
+    max-width: 50%;
+  }
+
+  .columns-wrapper img {
+    width: 23px;
+    height: 23px;
+  }
+  .comet-hero .columns-wrapper{
+    order:2;
+    padding: 0 10px;
+    margin: 0;
+}
+
 }
