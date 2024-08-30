@@ -352,7 +352,10 @@ main .section.highlight {
   main > .section.faq-section , 
   .section.emi-calculator.columns-container >div,
   .section.card-carousel-container > div ,
-  .mg-motors-spec-accordion.section, .mg-motors-spec-accordiontitle.section
+  .mg-motors-spec-accordion.section, .mg-motors-spec-accordiontitle.section,
+  .section.tab-section .default-content-wrapper,
+  .section.main-image .columns-wrapper,
+  main > .section > div
   {
       max-width: 1700px;
       margin: 0 auto;
@@ -381,10 +384,36 @@ main .section.highlight {
   }
   
 }
-
+.tab-footer p{
+  font-family: roboto-medium;
+  text-align: right;
+  font-size: 10.0px;
+}
+.tab-footer a.button:any-link{
+  background-color: #cf2230;
+    padding: 6px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: roboto-medium;
+    transition: all 1s linear;
+}
+.tab-footer p.button-container{
+  text-align: center;
+}
 .tab-section ul{
   display: flex;
 }
 .tab-section ul li{
   list-style:none;
+}
+.mg-motors-spec-accordiontitle h2{
+  color: #cf2230;
+    text-align: center;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+    font-family: 'GillSans-semibold';
+    font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
+    font-weight: 500;
 }

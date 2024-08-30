@@ -29,13 +29,25 @@ divs.forEach(function(div, index) {
         div.classList.add('hidden');
     }
 });
+var li = document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li');
+li.forEach(function(li, index) {
+    if (index == 0) {
+        li.classList.add('active');
+    }
+});
+
 var divs = document.querySelectorAll('.main-image.accessories-cont .columns-2-cols > div');
 divs.forEach(function(div, index) {
     if (index !== 0) {
         div.classList.add('hidden');
     }
 });
-
+var li = document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li');
+li.forEach(function(li, index) {
+    if (index == 0) {
+        li.classList.add('active');
+    }
+});
 var divs = document.querySelectorAll('.has-it-all-cont');
 divs.forEach(function(div, index) {
     if (index == 0) {
@@ -89,6 +101,8 @@ document.querySelectorAll('.main-image.has-it-all-cont li img').forEach(function
 
 document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
+        document.querySelector('.tab-section.has-it-all .default-content-wrapper ul li.active').classList.remove('active');
+        this.classList.add('active');
         var content = tab.textContent.toLowerCase();
         // Hide all tab panels
         document.querySelectorAll('.has-it-all-cont').forEach(function(panel) {
@@ -103,6 +117,8 @@ document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul l
 
 document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
+        document.querySelector('.tab-section.accessories .default-content-wrapper ul li.active').classList.remove('active');
+        this.classList.add('active');
         var content = tab.textContent.toLowerCase().replace(/\s/g, '-');
         // Hide all tab panels
         document.querySelectorAll('.accessories-cont').forEach(function(panel) {

@@ -453,10 +453,11 @@ main > .section.social-section > div{
     border-bottom: none;
     overflow: hidden;
     position: relative;
+    padding-left: 0;
 }
-.tab-section .default-content-wrapper > ul::before{
+.tab-section .default-content-wrapper > ul:before{
   height: 3px;
-  background-color: var(--active-border);
+  background-color: #eae9e7;
   content: "";
   position: absolute;
   width: 100%;
@@ -464,4 +465,25 @@ main > .section.social-section > div{
   left: 0;
   right: 0;
   z-index: 1;
+}
+.tab-section .default-content-wrapper > ul li{
+  font-family: GillSans-regular;
+
+  color: #000;
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.25vw;
+  padding: .83333vw 3.38542vw;
+  font-size: 1.25vw;
+  border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.tab-section .default-content-wrapper > ul li.active{
+  font-family: GillSans-SemiBold;
+  background: #eae9e7;
+  color: #000;
+  border: 1px solid  #eae9e7;
+  margin: 0;
+  font-size: 1.25vw;
+  padding: .83333vw 3.38542vw;
 }
