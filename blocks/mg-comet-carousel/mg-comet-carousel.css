@@ -207,3 +207,8 @@
         order:2;
     }
 }
+@media (max-width: 768px) {
+    .section.comet-hero{
+      background-image:url('../files/comet-back-mob.webp');
+    }
+  }
