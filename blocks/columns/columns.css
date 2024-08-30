@@ -230,6 +230,9 @@ main > .section.social-section > div{
 .emi-calculator {
   margin-top: 40px !important;
 }
+.emi-calculator .columns-wrapper {
+  margin-top: 40px !important;
+}
 .emi-calculator .columns {
   padding: 0 158px 0 92px;
   box-shadow: 0 5px 10px rgba(0,0,0,.0509804);
@@ -348,7 +351,10 @@ main > .section.social-section > div{
 }
 @media (max-width: 991px) {
   .emi-calculator {
-    margin-top: 100px !important;
+    margin-top: 40px !important;
+  }
+  .emi-calculator .columns-wrapper {
+    margin-top: 85px !important;
   }
   .emi-calculator .columns {
     padding: 0;
