@@ -37,7 +37,7 @@
   padding: 24px 0;
 }
 main > .section.social-section > div{
-  max-width: 1300px;
+  
   padding-inline: 0;
 }
 .social-section .columns > div > div > p .icon{
@@ -71,7 +71,7 @@ main > .section.social-section > div{
 
 .social-section .columns-wrapper .columns > div {
   width: 100%;
-  max-width: 1300px;
+  
 }
 
 .social-section .columns > div > div > p {
@@ -426,11 +426,18 @@ main > .section.social-section > div{
   padding: 10px;
   list-style: none;
 }
-
+.main-image li p{
+font-family: roboto-medium;
+    font-size: 1.04167vw;
+    color: #000;
+    padding-top: 1.04167vw;
+    margin: 0;
+}
 /* Style the images inside the grid */
 .main-image li img {
   opacity: 0.8;
   cursor: pointer;
+  max-height: 180px;
 }
 
 .main-image li img:hover {
