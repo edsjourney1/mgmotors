@@ -477,6 +477,7 @@ main > .section.social-section > div{
   font-size: 1.25vw;
   border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    text-transform: uppercase;
 }
 .tab-section .default-content-wrapper > ul li.active{
   font-family: GillSans-SemiBold;
