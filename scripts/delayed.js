@@ -64,7 +64,7 @@ document.querySelectorAll('.tab-section .default-content-wrapper ul li').forEach
         });
 
         // Show the corresponding tab panel
-        var targetPanel = document.querySelectorAll('.tab-content.' + content );
+        var targetPanel = document.querySelector('.tab-content.' + content );
         targetPanel.style.display = 'block';
     });
 });
