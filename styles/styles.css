@@ -367,7 +367,7 @@ main .section.highlight {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, .0509804);
   min-height: calc(100vh - 60px);
   background-position-y: bottom;
-  padding-top: 14vw;
+  padding-top: 18vw;
   background-image:url('../files/comet-back.webp');
 }
 .hidden{display:none!important;}
