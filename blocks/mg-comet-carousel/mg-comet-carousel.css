@@ -77,7 +77,8 @@
   margin: 0;
   padding: 0;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: #dede;
+  border:2px solid #ffffff;  
   transition: background-color 0.2s;
 }
 
