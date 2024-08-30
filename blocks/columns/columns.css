@@ -138,6 +138,21 @@ main > .section.social-section > div{
     text-align: right;
 }
 
+.mg-motors-spec-accordion .default-content-wrapper .button-container .button {
+    background-color: #cf2230;
+    padding: 6px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: roboto-medium;
+    transition: all 1s linear;
+}
+
+.mg-motors-spec-accordion .default-content-wrapper .button-container .button:hover {
+    background-color: #000;
+}
+
 .mg-motors-spec-accordion.columns-container {
     display: flex;
     flex-wrap: wrap;
