@@ -30,16 +30,40 @@ divs.forEach(function(div, index) {
     }
 });
 
+var divs = document.querySelectorAll('.tab-content');
+divs.forEach(function(div, index) {
+    if (index == 0) {
+        div.style.display = 'block';
+    }
+    else
+    div.style.display = 'none';
+});
+
 document.querySelectorAll('.main-image li img').forEach(function(image, index) {
-    
     image.addEventListener('click', function() {
-        var divs = document.querySelectorAll('.main-image .columns-2-cols > div');
-       divs.forEach(function(div, i) {
-        if (i === index) {
-            div.classList.remove('hidden');
-        } else {
-            div.classList.add('hidden');
-        }
+
+        var section = image.closest('.main-image');
+
+        var divs = section.querySelectorAll(' .columns-2-cols > div');
+
+        divs.forEach(function(div, i) {
+            if (i === index) {
+                div.classList.remove('hidden');
+            } else {
+                div.classList.add('hidden');
+            }
+        });
     });
+ });
+document.querySelectorAll('.tab-section .default-content-wrapper ul li').forEach(function(tab, index) {
+    tab.addEventListener('click', function() {
+        // Hide all tab panels
+        document.querySelectorAll('.columns-container').forEach(function(panel) {
+            panel.style.display = 'none';
+        });
+
+        // Show the corresponding tab panel
+        var targetPanel = document.querySelectorAll('.columns-container')[index];
+        targetPanel.style.display = 'block';
     });
 });

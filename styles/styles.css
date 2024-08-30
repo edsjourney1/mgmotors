@@ -378,3 +378,10 @@ main .section.highlight {
     background-image:url('../files/comet-back-mob.webp');
   }
 }
+
+.tab-section ul{
+  display: flex;
+}
+.tab-section ul li{
+  list-style:none;
+}
