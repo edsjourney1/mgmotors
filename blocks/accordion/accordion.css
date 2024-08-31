@@ -168,41 +168,32 @@
     color: #cf2230;
 }
 
-.mg-motors-accordion {
-  .accordion-item {
-    display: none;
-
-    &.active {
-      display: block;
-    }
-
-    &-label {
-      display: flex;
-      cursor: pointer;
-
-      p {
-        flex: 1;
-        text-align: center;
-        margin: 0;
-        padding: 1rem;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.3s ease;
-
-        &:hover,
-        &.active {
-          border-bottom: 2px solid lightgreen;
-        }
-      }
-    }
-
-    &-body {
-      display: none;
-
-      &.active {
-        display: block;
-      }
-    }
-  }
+.mg-motors-accordion .accordion-item {
+	 display: none;
+}
+ .mg-motors-accordion .accordion-item.active {
+	 display: block;
+}
+ .mg-motors-accordion .accordion-item-label {
+	 display: flex;
+	 cursor: pointer;
+}
+ .mg-motors-accordion .accordion-item-label p {
+	 flex: 1;
+	 text-align: center;
+	 margin: 0;
+	 padding: 1rem;
+	 border-bottom: 2px solid transparent;
+	 transition: border-bottom 0.3s ease;
+}
+ .mg-motors-accordion .accordion-item-label p:hover, .mg-motors-accordion .accordion-item-label p.active {
+	 border-bottom: 2px solid lightgreen;
+}
+ .mg-motors-accordion .accordion-item-body {
+	 display: none;
+}
+ .mg-motors-accordion .accordion-item-body.active {
+	 display: block;
 }
 
 .faq-section  .accordion-wrapper{
