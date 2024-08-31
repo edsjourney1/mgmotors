@@ -792,3 +792,13 @@ moveClassToHtmlEl('redesign-v2');
 /* EXTERNAL APP CLASS CHECK */
 moveClassToHtmlEl('external-app');
 
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector('.mg-motors-accordion .accordion-item-label').on('click', function() {
+    // Remove 'active' class from all labels and bodies
+    document.querySelector('.mg-motors-accordion .accordion-item-label p').removeClass('active');
+    document.querySelector('.mg-motors-accordion .accordion-item-body').removeClass('active');
+
+    // Add 'active' class to the clicked label and corresponding body
+    document.querySelector(this).find('p').addClass('active');
+    document.querySelector(this).next('.accordion-item-body').addClass('active');
+  });
