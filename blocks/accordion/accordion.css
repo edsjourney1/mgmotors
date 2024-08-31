@@ -168,6 +168,14 @@
     color: #cf2230;
 }
 
+.mg-motors-accordion .accordion-item-body {
+  display: none;
+}
+
+.mg-motors-accordion .accordion-item[open] .accordion-item-body {
+  display: block;
+}
+
 .faq-section  .accordion-wrapper{
     max-width: none;
   
