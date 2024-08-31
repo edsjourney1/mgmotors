@@ -21,62 +21,32 @@ export default function decorate(block) {
       row.replaceWith(details);
     });
 
-  // Function to initialize tabs for a given accordion item
-  function initializeTabs(accordionBody) {
-    const paragraphs = accordionBody.querySelectorAll('p');
-    const lists = accordionBody.querySelectorAll('ul');
+  const accordionItems = document.querySelectorAll('.mg-motors-accordion .accordion-item');
 
-    const tabTitlesContainer = document.createElement('div');
-    tabTitlesContainer.classList.add('tab-titles');
+  accordionItems.forEach(function(item) {
+    const label = item.querySelector('.accordion-item-label');
 
-    const tabContentsContainer = document.createElement('div');
+    label.addEventListener('click', function() {
+      // Close all other accordions
+      accordionItems.forEach(function(otherItem) {
+        if (otherItem !== item) {
+          otherItem.removeAttribute('open');
+        }
+      });
 
-    paragraphs.forEach((p, index) => {
-      // Create tab titles
-      const tabTitle = document.createElement('p');
-      tabTitle.classList.add('tab-title');
-      tabTitle.textContent = p.textContent;
-      tabTitle.setAttribute('data-tab', `tab${index}`);
-      tabTitlesContainer.appendChild(tabTitle);
-
-      // Create tab content
-      const tabContent = document.createElement('div');
-      tabContent.classList.add('tab-content');
-      tabContent.setAttribute('id', `tab${index}`);
-      tabContent.appendChild(lists[index].cloneNode(true));
-      tabContentsContainer.appendChild(tabContent);
-    });
-
-    // Clear existing content and append new tabs
-    accordionBody.innerHTML = '';
-    accordionBody.appendChild(tabTitlesContainer);
-    accordionBody.appendChild(tabContentsContainer);
-
-    // Handle tab switching
-    tabTitlesContainer.addEventListener('click', function(event) {
-      if (event.target.classList.contains('tab-title')) {
-        const targetTabId = event.target.getAttribute('data-tab');
-
-        // Remove active class from all tabs and contents
-        tabTitlesContainer.querySelectorAll('.tab-title').forEach(title => title.classList.remove('active'));
-        tabContentsContainer.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-
-        // Add active class to clicked tab and corresponding content
-        event.target.classList.add('active');
-        document.getElementById(targetTabId).classList.add('active');
+      // Toggle the current accordion's open state
+      if (item.hasAttribute('open')) {
+        item.removeAttribute('open');
+      } else {
+        item.setAttribute('open', '');
       }
     });
+  });
 
-    // Activate the first tab by default
-    const firstTabTitle = tabTitlesContainer.querySelector('.tab-title');
-    if (firstTabTitle) {
-      firstTabTitle.classList.add('active');
-      document.getElementById(firstTabTitle.getAttribute('data-tab')).classList.add('active');
-    }
+  // Automatically open the first accordion item
+  if (accordionItems.length > 0) {
+    accordionItems[0].setAttribute('open', '');
   }
-
-  // Initialize tabs for all .accordion-item-body elements
-  document.querySelectorAll('.mg-motors-spec-accordion details.accordion-item .accordion-item-body').forEach(initializeTabs);
-  }
+}
 
 
