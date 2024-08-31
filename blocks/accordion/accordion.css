@@ -167,6 +167,44 @@
     line-height: 50%;
     color: #cf2230;
 }
+
+.mg-motors-accordion {
+  .accordion-item {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &-label {
+      display: flex;
+      cursor: pointer;
+
+      p {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s ease;
+
+        &:hover,
+        &.active {
+          border-bottom: 2px solid lightgreen;
+        }
+      }
+    }
+
+    &-body {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
 .faq-section  .accordion-wrapper{
     max-width: none;
   
