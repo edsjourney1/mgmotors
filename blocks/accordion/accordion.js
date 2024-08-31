@@ -56,16 +56,31 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-  document.querySelector('.mg-motors-accordion .accordion-item-label').on('click', function() {
-    // Remove 'active' class from all labels and bodies
-    document.querySelector('.mg-motors-accordion .accordion-item-label p').removeClass('active');
-    document.querySelector('.mg-motors-accordion .accordion-item-body').removeClass('active');
+ document.addEventListener("DOMContentLoaded", function() {
+  const accordionItems = document.querySelectorAll('.mg-motors-accordion .accordion-item');
 
-    // Add 'active' class to the clicked label and corresponding body
-    document.querySelector(this).find('p').addClass('active');
-    document.querySelector(this).next('.accordion-item-body').addClass('active');
+  accordionItems.forEach(function(item) {
+    const label = item.querySelector('.accordion-item-label');
+
+    label.addEventListener('click', function() {
+      // Close all other accordions
+      accordionItems.forEach(function(otherItem) {
+        if (otherItem !== item) {
+          otherItem.removeAttribute('open');
+        }
+      });
+
+      // Toggle the current accordion's open state
+      if (item.hasAttribute('open')) {
+        item.removeAttribute('open');
+      } else {
+        item.setAttribute('open', '');
+      }
+    });
   });
 
-  // Automatically trigger click on the first tab to display it initially
-  document.querySelector('.mg-motors-accordion .accordion-item-label:first').trigger('click');
+  // Automatically open the first accordion item
+  if (accordionItems.length > 0) {
+    accordionItems[0].setAttribute('open', '');
+  }
 });
