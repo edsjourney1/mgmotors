@@ -168,12 +168,6 @@
     color: #cf2230;
 }
 
-.mg-motors-accordion .accordion-item {
-	 display: none;
-}
- .mg-motors-accordion .accordion-item.active {
-	 display: block;
-}
  .mg-motors-accordion .accordion-item-label {
 	 display: flex;
 	 cursor: pointer;
@@ -188,12 +182,6 @@
 }
  .mg-motors-accordion .accordion-item-label p:hover, .mg-motors-accordion .accordion-item-label p.active {
 	 border-bottom: 2px solid lightgreen;
-}
- .mg-motors-accordion .accordion-item-body {
-	 display: none;
-}
- .mg-motors-accordion .accordion-item-body.active {
-	 display: block;
 }
 
 .faq-section  .accordion-wrapper{
