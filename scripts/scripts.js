@@ -802,3 +802,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(this).find('p').addClass('active');
     document.querySelector(this).next('.accordion-item-body').addClass('active');
   });
+
+  // Automatically trigger click on the first tab to display it initially
+  document.querySelector('.mg-motors-accordion .accordion-item-label:first').trigger('click');
+});
