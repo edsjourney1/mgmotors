@@ -168,6 +168,37 @@
     color: #cf2230;
 }
 
+/* Styles for the tab titles */
+.mg-motors-spec-accordion .tab-titles {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mg-motors-spec-accordion .tab-title {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background-color: #f1f1f1;
+  margin-right: 5px;
+}
+
+.mg-motors-spec-accordion .tab-title.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Styles for the tab content */
+.mg-motors-spec-accordion .tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.mg-motors-spec-accordion .tab-content.active {
+  display: block;
+}
+
 .faq-section  .accordion-wrapper{
     max-width: none;
 }
