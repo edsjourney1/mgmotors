@@ -51,9 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
   document.querySelector('.mg-motors-accordion .accordion-item-label').on('click', function() {
     // Remove 'active' class from all labels and bodies
     document.querySelector('.mg-motors-accordion .accordion-item-label p').removeClass('active');
