@@ -446,8 +446,9 @@ font-family: roboto-medium;
   max-height: 180px;
   display: block;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  margin:0 auto;
 }
 .section.tab-content .columns-2-cols > div{
   align-items: flex-start;
@@ -531,4 +532,18 @@ margin-top:25px
   margin: 0;
   font-size: 1.25vw;
   padding: .83333vw 3.38542vw;
+}
+
+@media (max-width: 768px)  {
+  main > .section > div{
+    padding:0 12px;
+  }
+  .section.tab-content .columns-img-col+div h2{
+    font-size: 26px;
+        margin-bottom: 15px;
+  }
+  .section.tab-content .columns-img-col+div p:first-of-type{
+    font-size: 18px;
+        margin-bottom: 15px;
+  }
 }
