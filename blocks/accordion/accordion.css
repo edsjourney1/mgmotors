@@ -170,8 +170,6 @@
 
 .faq-section  .accordion-wrapper{
     max-width: none;
-  
-
 }
 @media (max-width: 900px) {
   main > .faq-section > div{
