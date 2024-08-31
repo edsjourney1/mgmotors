@@ -183,19 +183,11 @@
   margin-right: 5px;
 }
 
-.mg-motors-spec-accordion .accordion-item-body .tab-title.active {
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
-}
-
-/* Styles for the tab content */
-.mg-motors-spec-accordion .accordion-item-body .tab-content {
-  border: 1px solid #ccc;
-  padding: 10px;
+.mg-motors-accordion .accordion-item-body {
   display: none;
 }
 
-.mg-motors-spec-accordion .accordion-item-body .tab-content.active {
+.mg-motors-accordion .accordion-item[open] .accordion-item-body {
   display: block;
 }
 
