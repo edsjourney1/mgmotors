@@ -23,7 +23,7 @@ export default function decorate(block) {
   }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const accordionBody = document.querySelector('.accordion-item-body');
+  const accordionBody = document.querySelector('.mg-motors-spec-accordion details.accordion-item .accordion-item-body');
   const paragraphs = accordionBody.querySelectorAll('p');
   const lists = accordionBody.querySelectorAll('ul');
 
