@@ -20,33 +20,6 @@ export default function decorate(block) {
       details.append(summary, body);
       row.replaceWith(details);
     });
-
-  const accordionItems = document.querySelectorAll('.mg-motors-accordion .accordion-item');
-
-  accordionItems.forEach(function(item) {
-    const label = item.querySelector('.accordion-item-label');
-
-    label.addEventListener('click', function() {
-      // Close all other accordions
-      accordionItems.forEach(function(otherItem) {
-        if (otherItem !== item) {
-          otherItem.removeAttribute('open');
-        }
-      });
-
-      // Toggle the current accordion's open state
-      if (item.hasAttribute('open')) {
-        item.removeAttribute('open');
-      } else {
-        item.setAttribute('open', '');
-      }
-    });
-  });
-
-  // Automatically open the first accordion item
-  if (accordionItems.length > 0) {
-    accordionItems[0].setAttribute('open', '');
-  }
 }
 
 
