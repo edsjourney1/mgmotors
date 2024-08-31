@@ -52,3 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+$(document).ready(function() {
+  $('.mg-motors-accordion .accordion-item-label').on('click', function() {
+    // Remove 'active' class from all labels and bodies
+    $('.mg-motors-accordion .accordion-item-label p').removeClass('active');
+    $('.mg-motors-accordion .accordion-item-body').removeClass('active');
+
+    // Add 'active' class to the clicked label and corresponding body
+    $(this).find('p').addClass('active');
+    $(this).next('.accordion-item-body').addClass('active');
+  });
+
+  // Automatically trigger click on the first tab to display it initially
+  $('.mg-motors-accordion .accordion-item-label:first').trigger('click');
+});
