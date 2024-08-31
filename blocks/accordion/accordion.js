@@ -4,6 +4,10 @@
  * https://www.hlx.live/developer/block-collection/accordion
  */
 
+var jQueryScript = document.createElement('script');  
+jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+document.head.appendChild(jQueryScript);
+
 export default function decorate(block) {
     [...block.children].forEach((row) => {
       // decorate accordion item label
