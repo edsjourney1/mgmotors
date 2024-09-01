@@ -76,7 +76,7 @@ export default function decorate(block) {
   }
 
   // Initialize tabs for all .accordion-item-body elements
-  document.querySelectorAll('.accordion-item-body').forEach(initializeTabs);
+  document.querySelectorAll('.mg-motors-accordion .accordion-item .accordion-item-body').forEach(initializeTabs);
 }
 
 
