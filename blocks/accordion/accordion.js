@@ -20,7 +20,7 @@ export default function decorate(block) {
       details.append(summary, body);
       row.replaceWith(details);
     });
-/*
+
   // Function to initialize tabs for a given accordion item
   function initializeTabs(accordionBody, accordionIndex) {
     const paragraphs = accordionBody.querySelectorAll('p');
