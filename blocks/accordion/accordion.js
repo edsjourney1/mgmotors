@@ -20,7 +20,7 @@ export default function decorate(block) {
       details.append(summary, body);
       row.replaceWith(details);
     });
-
+/*
   // Function to initialize tabs for a given accordion item
   function initializeTabs(accordionBody) {
     const paragraphs = accordionBody.querySelectorAll('p');
@@ -76,7 +76,7 @@ export default function decorate(block) {
   }
 
   // Initialize tabs for all .accordion-item-body elements
-  document.querySelectorAll('.mg-motors-accordion .accordion-item .accordion-item-body').forEach(initializeTabs);
+  document.querySelectorAll('.mg-motors-accordion .accordion-item .accordion-item-body').forEach(initializeTabs); */
 }
 
 
