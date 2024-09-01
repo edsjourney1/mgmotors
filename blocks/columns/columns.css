@@ -587,16 +587,35 @@ margin-top:25px
     text-align: left;
     padding: 1.61453vw 2.01816vw;
     display: none;
-
   }
-
   .tab-section .default-content-wrapper > ul li:first-child {
-    font-family: GillSans-SemiBold;
+    
     background: #eae9e7;
     border: 1px solid #eae9e7;
-
+    border: 1px solid #fff;
+  }
+  .tab-section .default-content-wrapper > ul li:first-child:after {
+    color: #000;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: translateY(-50%) rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid;
+    border-width: 2px 2px 0 0;
+    transition: transform 0.2s;
 }
-
+}
+@media (max-width: 575.98px) {
+  .tab-section .default-content-wrapper > ul{
+  border: 3px solid #eae9e7;
+        border-radius: 8px 8px 0 0;
+  }
+  .tab-section .default-content-wrapper > ul li{
+    padding: 1pc 20px;
+  }
+}
 .tab-footer a.button:any-link,.mg-motors-spec-accordion .default-content-wrapper .button-container .button{
   font-size: 14px;
   padding: 5px 10px;

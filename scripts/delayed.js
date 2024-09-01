@@ -144,7 +144,7 @@ document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul l
             // If the clicked tab is already active, toggle visibility of all tabs
             if (this.classList.contains('active')) {
                 document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(t) {
-                    t.style.display = t.style.display === 'block' ? 'none' : 'block';
+                    t.style.display = t.style.display === 'block' ? 'block' : 'block';
                 });
                 return; // Exit the function to prevent removing the active class
             } else {
