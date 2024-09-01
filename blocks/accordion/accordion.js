@@ -56,10 +56,7 @@ export default function decorate(block) {
     });
 
     brochure.forEach((h3, index) => {
-      const tabButton = document.createElement('h3');
-      tabButton.classList.add('tab-button');
-      tabButton.appendChild(brochure[index].cloneNode(true));
-      tabButtonContainer.appendChild(tabButton);
+      tabButtonContainer.appendChild(brochure[index].cloneNode(true));
     });
   
     // Clear existing content and append new tabs
