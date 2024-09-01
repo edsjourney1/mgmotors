@@ -147,12 +147,24 @@
 
 .mg-motors-spec-accordion details.accordion-item .accordion-item-label {
     background-color: transparent;
-    padding: 10px 15px 10px 20%;
+    padding: 10px 15px 10px 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .mg-motors-spec-accordion details.accordion-item .accordion-item-label {
+        padding: 10px 15px 10px 20%;
+    }
 }
 
 .mg-motors-spec-accordion details.accordion-item .accordion-item-body {
     background-color: #fff;
-    padding: 10px 15px 10px 20%;
+    padding: 10px 15px 10px 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .mg-motors-spec-accordion details.accordion-item .accordion-item-body {
+        padding: 10px 15px 10px 20%;
+    }
 }
 
 .mg-motors-spec-accordion .accordion-wrapper > .accordion > details > summary > p {
@@ -180,12 +192,18 @@
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
-  padding: 10px;
-    font-size: 1.04167vw;
-    font-family: Roboto-Medium;
-  border-bottom: 3px solid #f2f2f2;
-  background-color: #fff;
-  margin-right: 5px;
+    padding: 10px;
+    font-size: 3.04167vw;
+        font-family: Roboto-Medium;
+      border-bottom: 3px solid #f2f2f2;
+      background-color: #fff;
+      margin-right: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
+        font-size: 1.04167vw;
+    }
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title.active {
@@ -200,8 +218,14 @@
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
-  font-size: 1.04167vw;
+  font-size: 3.04167vw;
     font-family: Roboto-Medium;
+}
+
+@media screen and (min-width: 600px) {
+    .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
+        font-size: 1.04167vw;
+    }
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li strong {
@@ -216,9 +240,9 @@
 
 .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a {
     background-color: #cf2230;
-    padding: .52083vw 1.5625vw;
+    padding: 2.52083vw 2.5625vw;
     color: #fff;
-    font-size: 1.04167vw;
+    font-size: 3.04167vw;
     border-radius: 6px;
     font-weight: 500;
     font-family: roboto-medium;
@@ -229,6 +253,13 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 600px) {
+    .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
+        padding: .52083vw 1.5625vw;
+        font-size: 1.04167vw;
+    }
+}
+
 .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a:hover {
     background-color: #000;
 }
@@ -237,27 +268,6 @@
     .mg-motors-spec-accordion .accordion-wrapper {
         width: 100%;
         margin-top:15px;
-    }
-
-    .mg-motors-spec-accordion details.accordion-item .accordion-item-label {
-        padding: 10px 15px 10px 10px;
-    }
-
-    .mg-motors-spec-accordion details.accordion-item .accordion-item-body {
-        padding: 10px 15px 10px 10px;
-    }
-
-    .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
-        font-size: 3.04167vw;
-    }
-
-    .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
-        font-size: 3.04167vw;
-    }
-
-    .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a {
-        padding: 2.52083vw 2.5625vw;
-        font-size: 3.04167vw;
     }
 }
 
