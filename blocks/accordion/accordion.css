@@ -145,9 +145,13 @@
     border-radius: 10px;
 }
 
-.mg-motors-spec-accordion details.accordion-item .accordion-item-label,
-.mg-motors-spec-accordion details.accordion-item .accordion-item-body {
+.mg-motors-spec-accordion details.accordion-item .accordion-item-label {
     background-color: transparent;
+    padding: 10px 15px 10px 20%;
+}
+
+.mg-motors-spec-accordion details.accordion-item .accordion-item-body {
+    background-color: #fff;
     padding: 10px 15px 10px 20%;
 }
 
@@ -177,15 +181,14 @@
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-bottom: none;
+  border-bottom: 3px solid #f2f2f2;
   background-color: #f1f1f1;
   margin-right: 5px;
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title.active {
   background-color: #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: epx solid #b9e170;
 }
 
 /* Styles for the tab content */
