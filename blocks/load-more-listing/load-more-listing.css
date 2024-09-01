@@ -57,6 +57,11 @@ main>.section.load-more-listing-container {
         flex-basis: 23%;
         flex-wrap: wrap;
     }
+    .section.load-more-listing-container button {
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
 }
 @media (max-width: 767px) {
     .load-more-listing {
@@ -65,4 +70,5 @@ main>.section.load-more-listing-container {
         grid-gap: 10px;
         position: relative;
     }
+    
 }

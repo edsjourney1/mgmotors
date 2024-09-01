@@ -267,4 +267,8 @@
   .section.two-col-form.form-container {
     width: 100%;
   }
+  .section.two-col-form h2, .tab-section h2{
+    padding-bottom: 5.55556vw;
+        font-size: 8.33333vw;
+  }
 }

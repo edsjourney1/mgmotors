@@ -252,7 +252,8 @@
     font-size: 28px;
   }
   .faq-section .accordion details summary p{
-    font-size: 2.4218vw;
+   
+        font-size: 2.4218vw;
     line-height: inherit;
     padding-right: 40px;
   }
@@ -276,6 +277,12 @@
       font-size: 2.01816vw;
   }
 }
+@media (max-width: 575.98px) {
+  .faq-section h2 {
+      font-size: 7.22222vw;
+      padding-bottom: 11.11111vw;
+  }
+}
 @media (min-width:992px){
   .faq-section .accordion details .accordion-item-body p {
     font-size: 1.04167vw;
@@ -283,7 +290,17 @@
 }
 @media (max-width: 767.98px) {
   .faq-section .accordion details summary p{
-    font-size: 5.55556vw;}
+    font-size: 5.55556vw;
+    line-height: 26px;
+    }
+    .faq-section .accordion details[open] .accordion-item-body{
+      padding-top: 5.55556vw;
+      padding-bottom: 5.55556vw;
+    }
+    .faq-section .accordion details summary{
+      padding-top: 5.55556vw;
+        padding-bottom: 5.55556vw;
+    }
   }
 @media (min-width: 1900px) {
     main > .section.faq-section { 

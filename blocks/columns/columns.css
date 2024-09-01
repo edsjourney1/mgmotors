@@ -102,6 +102,9 @@ main > .section.social-section > div{
     flex-basis: 33.33%; 
     border-right: none;
     margin-bottom: 3.02725vw;
+    padding: 12px;
+        text-align: center;
+        justify-content: flex-start;
   }
 
 
@@ -581,7 +584,10 @@ margin-top:25px
     margin-bottom: 15px;
 
   }
-
+  .emi-calculator h2{
+    font-size: 7.22222vw;
+    padding-bottom: 11.11111vw;
+  }
 }
 
 @media (max-width: 991.98px) {
