@@ -193,7 +193,6 @@
 
 /* Styles for the tab content */
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content {
-  border: 1px solid #ccc;
   padding: 10px;
   display: none;
 }
