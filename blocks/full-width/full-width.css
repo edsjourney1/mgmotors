@@ -15,4 +15,13 @@
 
 
   } 
-  
+  .full-width.full-image img{display: block;}
+  @media (max-width: 767.98px) {
+    .full-width.full-image{
+      background-image: url("../../files/full-width-img-mob.webp");
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
+    }
+    .full-width.full-image img{display: none;}
+  }

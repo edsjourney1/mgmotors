@@ -38,7 +38,23 @@ main>.section.load-more-listing-container {
     margin: 20px auto;
     display: block;
 }
-@media (max-width: 991px) {
+
+
+@media (max-width: 992px) {
+    .load-more-listing {
+        display: flex;
+        grid-template-columns: none;
+        position: relative;
+        flex-basis: 25%;
+        flex-wrap: wrap;
+    }
+    .load-more-listing .field-wrapper {
+        display: flex;
+        flex-basis: 23%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px) {
     .load-more-listing {
         display: grid;
         grid-template-columns: none;

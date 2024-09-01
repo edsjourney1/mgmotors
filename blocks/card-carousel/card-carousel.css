@@ -4,7 +4,7 @@
 	padding-bottom: 48px;
 	margin-bottom: 0;
 	font-family: 'GillSans-semibold';
-	font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
+	font-size: 2.08333vw;
 	font-weight: 500;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-title > p:nth-child(2) {
-  	font-family: roboto-regular;
+  	font-family: roboto;
 	font-size: 1.04167vw;
 	color: #6e6e6e;
 	margin-bottom: 1.04167vw;
@@ -82,7 +82,7 @@
 }
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-title > p:nth-child(4) {
-  	font-family: roboto-regular;
+  	font-family: roboto;
 	font-size: 1.04167vw;
 	color: #6e6e6e;
 	margin-bottom: .52083vw;
@@ -168,7 +168,7 @@
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-body ul > li {
 	text-align: left;
-  	font-family: roboto-regular;
+  	font-family: roboto;
 	font-size: 1.04167vw;
 	color: #000;
 	margin-bottom: 1.04167vw;
@@ -185,7 +185,7 @@
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-brochure > p {
 	display: flex;
-  	font-family: roboto-regular;
+  	font-family: roboto;
 	font-size: .9375vw;
 	align-items: center;
 	border-top: 1px solid #cececf;
@@ -237,7 +237,10 @@
 	background: #e1e1e1;
 	cursor: default;
 }
-
+.section.card-carousel-container{
+	padding-top:60px;
+	padding-bottom:60px;
+}
 @media (width <= 991px) {
 	.card-carousel-container div.card-carousel.block ul.card-list {
     margin: 0;

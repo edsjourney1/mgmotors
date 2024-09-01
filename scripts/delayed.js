@@ -120,10 +120,48 @@ document.querySelectorAll('.main-image.has-it-all-cont li picture').forEach(func
     });
  });
 
+// document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(tab, index) {
+//     tab.addEventListener('click', function() {
+  
+//         document.querySelector('.tab-section.has-it-all .default-content-wrapper ul li.active').classList.remove('active');
+//         this.classList.add('active');
+//         var content = tab.textContent.toLowerCase();
+//         // Hide all tab panels
+//         document.querySelectorAll('.has-it-all-cont').forEach(function(panel) {
+//             panel.style.display = 'none';
+//         });
+
+//         // Show the corresponding tab panel
+//         var targetPanel = document.querySelector('.has-it-all-cont.' + content );
+//         targetPanel.style.display = 'block';
+//     });
+// });
+
 document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
-        document.querySelector('.tab-section.has-it-all .default-content-wrapper ul li.active').classList.remove('active');
-        this.classList.add('active');
+        // Check screen width
+        if (window.innerWidth < 992) {
+            // If the clicked tab is already active, toggle visibility of all tabs
+            if (this.classList.contains('active')) {
+                document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(t) {
+                    t.style.display = t.style.display === 'block' ? 'none' : 'block';
+                });
+                return; // Exit the function to prevent removing the active class
+            } else {
+                // Hide all tabs except the clicked one
+                document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul li').forEach(function(t) {
+                    t.style.display = 'none';
+                });
+                this.style.display = 'block';
+            }
+        }
+
+        // Remove active class from all tabs and add to the clicked tab
+        if (!this.classList.contains('active')) {
+            document.querySelector('.tab-section.has-it-all .default-content-wrapper ul li.active').classList.remove('active');
+            this.classList.add('active');
+        }
+
         var content = tab.textContent.toLowerCase();
         // Hide all tab panels
         document.querySelectorAll('.has-it-all-cont').forEach(function(panel) {
@@ -131,10 +169,11 @@ document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul l
         });
 
         // Show the corresponding tab panel
-        var targetPanel = document.querySelector('.has-it-all-cont.' + content );
+        var targetPanel = document.querySelector('.has-it-all-cont.' + content);
         targetPanel.style.display = 'block';
     });
 });
+
 
 document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {

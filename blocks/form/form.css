@@ -21,7 +21,12 @@
 .form form fieldset .selection-wrapper + .selection-wrapper {
   margin-top: 0.25em;
 }
-
+.section.two-col-form h2{
+  font-size: 2.08333vw;
+    color: #cf2230;
+    font-family: GillSans-SemiBold;;
+    text-align: center;
+}
 @media (width >= 600px) {
   .form fieldset {
     grid-template-columns: repeat(2, auto);

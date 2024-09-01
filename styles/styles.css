@@ -364,6 +364,13 @@ main .section.highlight {
     padding:3.125vw 0;
   }
 }
+@media (max-width: 991.98px){
+  main > .section.faq-section {
+    margin-left:auto;
+    margin-right:auto;
+     max-width: 45pc;
+  }
+}
 .section.comet-hero{
   background-size: cover;
   background-repeat: no-repeat;
