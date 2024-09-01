@@ -168,7 +168,7 @@ main > .section.social-section > div{
 
 .mg-motors-spec-accordion .columns-wrapper .columns.block {
     border-radius: 10px;
-    padding: 0;
+    padding: 45px 0 45px 0;
     background: rgb(185, 225, 112);
     border: 1px solid rgb(185, 225, 112);
     color: rgb(0, 0, 0);
