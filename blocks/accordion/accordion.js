@@ -82,8 +82,8 @@ export default function decorate(block) {
   }
   
   // Initialize all accordion items
-  document.querySelectorAll('.accordion-item').forEach((accordionItem, index) => {
-    const accordionBody = accordionItem.querySelector('.accordion-item-body');
+  document.querySelectorAll('.mg-motors-accordion .accordion-item').forEach((accordionItem, index) => {
+    const accordionBody = accordionItem.querySelector('.mg-motors-accordion .accordion-item .accordion-item-body');
     initializeTabs(accordionBody, index);
   });
 }
