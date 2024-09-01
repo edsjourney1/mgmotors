@@ -181,6 +181,8 @@
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
   padding: 10px;
+    font-size: 1.04167vw;
+    font-family: Roboto-Medium;
   border-bottom: 3px solid #f2f2f2;
   background-color: #fff;
   margin-right: 5px;
