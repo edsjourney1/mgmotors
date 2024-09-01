@@ -169,18 +169,34 @@
 }
 
 /* Styles for the tab titles */
-.mg-motors-spec-accordion .accordion-item-body .tab-titles {
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-titles {
   display: flex;
   cursor: pointer;
   margin-bottom: 10px;
 }
 
-.mg-motors-spec-accordion .accordion-item-body .tab-title {
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
   padding: 10px;
   border: 1px solid #ccc;
   border-bottom: none;
   background-color: #f1f1f1;
   margin-right: 5px;
+}
+
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Styles for the tab content */
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-content {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-content.active {
+  display: block;
 }
 
 .faq-section  .accordion-wrapper{
