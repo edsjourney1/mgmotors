@@ -49,15 +49,25 @@ li.forEach(function(li, index) {
     }
 });
 
-var imgLists = document.querySelectorAll('.has-it-all-cont .default-content-wrapper > ul > li picture');
-imgLists.forEach(function(li, index) {
-    if (index == 0) {
-        li.classList.add('active');
-    }
-});
-var imgLists = document.querySelectorAll('.accessories-cont .default-content-wrapper > ul >li picture');
-imgLists.forEach(function(li, index) {
-    if (index == 0) {
+// var imgLists = document.querySelectorAll('.has-it-all-cont .default-content-wrapper > ul > li picture');
+// imgLists.forEach(function(li, index) {
+//     if (index == 0) {
+//         li.classList.add('active');
+//     }
+// });
+// var imgLists = document.querySelectorAll('.accessories-cont .default-content-wrapper > ul >li picture');
+// imgLists.forEach(function(li, index) {
+//     if (index == 0) {
+//         li.classList.add('active');
+//     }
+// });
+var imgLists1 = document.querySelectorAll('.has-it-all-cont .default-content-wrapper > ul > li picture');
+var imgLists2 = document.querySelectorAll('.accessories-cont .default-content-wrapper > ul > li picture');
+
+var combinedImgLists = [...imgLists1, ...imgLists2];
+
+combinedImgLists.forEach(function(li, index) {
+    if (index == 0 || index == imgLists1.length) {
         li.classList.add('active');
     }
 });
@@ -177,8 +187,28 @@ document.querySelectorAll('.tab-section.has-it-all .default-content-wrapper ul l
 
 document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(tab, index) {
     tab.addEventListener('click', function() {
-        document.querySelector('.tab-section.accessories .default-content-wrapper ul li.active').classList.remove('active');
-        this.classList.add('active');
+        if (window.innerWidth < 992) {
+            // If the clicked tab is already active, toggle visibility of all tabs
+            if (this.classList.contains('active')) {
+                document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(t) {
+                    t.style.display = t.style.display === 'block' ? 'block' : 'block';
+                });
+                return; // Exit the function to prevent removing the active class
+            } else {
+                // Hide all tabs except the clicked one
+                document.querySelectorAll('.tab-section.accessories .default-content-wrapper ul li').forEach(function(t) {
+                    t.style.display = 'none';
+                });
+                this.style.display = 'block';
+            }
+        }
+
+        // Remove active class from all tabs and add to the clicked tab
+        if (!this.classList.contains('active')) {
+            document.querySelector('.tab-section.accessories .default-content-wrapper ul li.active').classList.remove('active');
+            this.classList.add('active');
+        }
+
         var content = tab.textContent.toLowerCase().replace(/\s/g, '-');
         // Hide all tab panels
         document.querySelectorAll('.accessories-cont').forEach(function(panel) {
