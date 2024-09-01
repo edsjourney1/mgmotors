@@ -143,6 +143,27 @@
         width: 100%;
         margin-top:15px;
     }
+
+    .mg-motors-spec-accordion details.accordion-item .accordion-item-label {
+        padding: 10px 15px 10px 10px;
+    }
+
+    .mg-motors-spec-accordion details.accordion-item .accordion-item-body {
+        padding: 10px 15px 10px 10px;
+    }
+
+    .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title {
+        font-size: 3.04167vw;
+    }
+
+    .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
+        font-size: 3.04167vw;
+    }
+
+    .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a {
+        padding: 2.52083vw 2.5625vw;
+        font-size: 3.04167vw;
+    }
 }
 
 .mg-motors-spec-accordion details.accordion-item {
