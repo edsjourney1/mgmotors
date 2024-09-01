@@ -166,6 +166,12 @@ main > .section.social-section > div{
     margin-top: 0;
 }
 
+@media screen and (max-width: 600px) {
+    .mg-motors-spec-accordion .columns-wrapper {
+        width: 100%;
+    }
+}
+
 .mg-motors-spec-accordion .columns-wrapper .columns.block {
     border-radius: 10px;
     padding: 45px 0 45px 0;
@@ -238,6 +244,13 @@ main > .section.social-section > div{
     right: 0;
     transform: translate(47%, 2%);
     width: 56%;
+}
+
+@media screen and (max-width: 600px) {
+    .mg-motors-spec-accordion .columns-wrapper {
+        transform: translate(0%, 15%);
+        width: 35%;
+    }
 }
 
 /* calculator section */
