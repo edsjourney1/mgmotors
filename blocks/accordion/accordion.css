@@ -199,6 +199,11 @@
   display: none;
 }
 
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
+  font-size: 1.04167vw;
+    font-family: Roboto-Medium;
+}
+
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content.active {
   display: block;
 }
