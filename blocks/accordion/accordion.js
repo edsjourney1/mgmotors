@@ -56,7 +56,9 @@ export default function decorate(block) {
     accordionBody.innerHTML = '';
     accordionBody.appendChild(tabTitlesContainer);
     accordionBody.appendChild(tabContentsContainer);
-    accordionBody.appendChild(brochure[accordionIndex]);
+    if(brochure[accordionIndex]){
+      accordionBody.appendChild(brochure[accordionIndex]);
+    }
   
     // Set the first tab as active by default
     const firstTabTitle = tabTitlesContainer.querySelector('.tab-title');
