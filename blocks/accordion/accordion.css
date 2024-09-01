@@ -138,6 +138,12 @@
     margin-top: 0;
 }
 
+@media screen and (max-width: 600px) {
+    .mg-motors-spec-accordion .accordion-wrapper {
+        width: 100%;
+    }
+}
+
 .mg-motors-spec-accordion details.accordion-item {
     background-color: #f2f2f2 !important;
     color: #000 !important;
