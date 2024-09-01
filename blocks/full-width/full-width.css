@@ -15,6 +15,12 @@
 
 
   } 
+  .full-width-container .default-content-wrapper p{
+    font-family: Roboto-Medium;
+    text-align: right;
+    font-size: 10.0px;
+    line-height:15px
+  }
   .full-width.full-image img{display: block;}
   @media (max-width: 767.98px) {
     .full-width.full-image{
