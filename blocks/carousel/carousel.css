@@ -438,7 +438,7 @@ header {
 
 @media (width >=1024px) {
     .carousel-slider-wrapper {
-        height: 551px;
+        height: 100vh;
     }
 }
 /* .carousel-item-next,.carousel-item-prev,.carousel-slide.active {
@@ -452,3 +452,8 @@ header {
     -webkit-transform: translateX(100%);
     transform: translateX(100%)
 } */
+@media (min-width: 1280px) and (max-width: 3800px) {
+    #named-after-its-true-inspirations{
+        font-size: 33px;
+    }
+}

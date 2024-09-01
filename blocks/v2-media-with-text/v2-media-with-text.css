@@ -240,7 +240,13 @@ main > .section > div.v2-media-with-text-wrapper {
   .v2-media-with-text {
     gap: 48px;
   }
-
+  .youtube-w-title h2{
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+  main .section.youtube-w-title{
+    padding-bottom: 30px;
+  }
 
   .v2-media-with-text__media-section video.v2-media-with-text__media {
     aspect-ratio: 16/9;
@@ -250,6 +256,7 @@ main > .section > div.v2-media-with-text-wrapper {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 83.33333333%;
   }
 
   .v2-media-with-text__sub-text-section {
@@ -258,7 +265,7 @@ main > .section > div.v2-media-with-text-wrapper {
 
   .v2-media-with-text__content-section,
   .v2-media-with-text__content-section p {
-    font-size: var(--f-body-2-font-size);
+      font-size: 20.0px;
     letter-spacing: var(--f-body-2-letter-spacing);
     line-height: var(--f-body-2-line-height);
     margin-bottom: 0;
