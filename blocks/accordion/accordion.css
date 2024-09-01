@@ -141,6 +141,7 @@
 @media screen and (max-width: 600px) {
     .mg-motors-spec-accordion .accordion-wrapper {
         width: 100%;
+        margin-top:15px;
     }
 }
 
