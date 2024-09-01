@@ -188,7 +188,7 @@
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title.active {
   background-color: #fff;
-  border-bottom: epx solid #b9e170;
+  border-bottom: 3px solid #b9e170;
 }
 
 /* Styles for the tab content */
