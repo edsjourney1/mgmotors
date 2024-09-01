@@ -31,6 +31,9 @@ export default function decorate(block) {
     tabTitlesContainer.classList.add('tab-titles');
   
     const tabContentsContainer = document.createElement('div');
+
+    const tabButtonContainer = document.createElement('div');
+    tabButtonContainer.classList.add('tab-button');
   
     paragraphs.forEach((p, index) => {
       // Create tab titles
@@ -56,13 +59,14 @@ export default function decorate(block) {
       const tabButton = document.createElement('h3');
       tabButton.classList.add('tab-button');
       tabButton.appendChild(brochure[index].cloneNode(true));
+      tabButtonContainer.appendChild(tabButton);
     });
   
     // Clear existing content and append new tabs
     accordionBody.innerHTML = '';
     accordionBody.appendChild(tabTitlesContainer);
     accordionBody.appendChild(tabContentsContainer);
-    accordionBody.appendChild(tabButton);
+    accordionBody.appendChild(tabButtonContainer);
   
     // Set the first tab as active by default
     const firstTabTitle = tabTitlesContainer.querySelector('.tab-title');
