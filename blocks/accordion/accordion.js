@@ -49,7 +49,6 @@ export default function decorate(block) {
       tabContent.classList.add('tab-content');
       tabContent.setAttribute('id', uniqueTabId);
       tabContent.appendChild(lists[index].cloneNode(true));
-      tabContent.appendChild(brochure[accordionIndex]);
       tabContentsContainer.appendChild(tabContent);
     });
   
@@ -57,6 +56,7 @@ export default function decorate(block) {
     accordionBody.innerHTML = '';
     accordionBody.appendChild(tabTitlesContainer);
     accordionBody.appendChild(tabContentsContainer);
+    accordionBody.appendChild(brochure[accordionIndex]);
   
     // Set the first tab as active by default
     const firstTabTitle = tabTitlesContainer.querySelector('.tab-title');
