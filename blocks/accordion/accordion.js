@@ -24,6 +24,7 @@ export default function decorate(block) {
   // Function to initialize tabs for a given accordion item
   function initializeTabs(accordionBody, accordionIndex) {
     const paragraphs = accordionBody.querySelectorAll('p');
+    const brochure = accordionBody.querySelectorAll('h3');
     const lists = accordionBody.querySelectorAll('ul');
   
     const tabTitlesContainer = document.createElement('div');
@@ -48,6 +49,7 @@ export default function decorate(block) {
       tabContent.classList.add('tab-content');
       tabContent.setAttribute('id', uniqueTabId);
       tabContent.appendChild(lists[index].cloneNode(true));
+      tabContent.appendChild(brochure[accordionIndex]);
       tabContentsContainer.appendChild(tabContent);
     });
   
