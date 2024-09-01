@@ -223,6 +223,9 @@
     font-weight: 500;
     font-family: roboto-medium;
     transition: all 1s linear;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a:hover {
