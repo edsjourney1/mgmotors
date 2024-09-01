@@ -204,6 +204,12 @@
     font-family: Roboto-Medium;
 }
 
+.mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li strong {
+    display: inline-block;
+    width: 55%;
+    font-weight: 400;
+}
+
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content.active {
   display: block;
 }
