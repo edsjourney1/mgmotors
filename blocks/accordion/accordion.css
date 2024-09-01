@@ -252,24 +252,39 @@
     font-size: 28px;
   }
   .faq-section .accordion details summary p{
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 2.4218vw;
+    line-height: inherit;
     padding-right: 40px;
   }
   .faq-section .accordion details .accordion-item-body p{
     font-size: 5vw;
   }
   .faq-section .accordion details[open] .accordion-item-body{
-    padding-top: 5.55556vw;
-    padding-bottom: 5.55556vw;
+    padding-top: 2.01816vw;
+    padding-bottom: 2.01816vw;
   }
     main > .faq-section > div{
         padding:0;
   }
   .faq-section .accordion details summary{
-    padding: 26px 0;
+     padding-top: 2.01816vw;
+     padding-bottom: 2.01816vw;
   }
 }
+@media (min-width: 768px) {
+  .faq-section .accordion details .accordion-item-body p {
+      font-size: 2.01816vw;
+  }
+}
+@media (min-width:992px){
+  .faq-section .accordion details .accordion-item-body p {
+    font-size: 1.04167vw;
+}
+}
+@media (max-width: 767.98px) {
+  .faq-section .accordion details summary p{
+    font-size: 5.55556vw;}
+  }
 @media (min-width: 1900px) {
     main > .section.faq-section { 
         max-width: 1700px;

@@ -254,7 +254,14 @@ main > .section.social-section > div{
 }
 
 /* calculator section */
-
+.emi-calculator h2{
+  font-family: GillSans-SemiBold;
+  font-size: 2.08333vw;
+  color: #cf2230;
+  text-align: center;
+  padding-bottom: 3.125vw;
+  margin: 0;
+  }
 .emi-calculator {
   margin-top: 40px !important;
 }
@@ -294,7 +301,7 @@ main > .section.social-section > div{
   padding: 20px 12px;
 }
 .emi-calculator .columns > div > div p {
-  font-size: 12px;
+  font-size: .9375vw;
   line-height: 18px;
   color: #000;
   font-family: GillSans-regular;
@@ -302,13 +309,14 @@ main > .section.social-section > div{
   padding-bottom: 14px;
 }
 .emi-calculator .columns > div > div h4 {
-  font-size: 16px;
+  font-size: 1.25vw;
   line-height: 24px;
   color: #000;
   font-family: roboto-medium;
   margin: 0;
   position: relative;
   padding-bottom: 35px;
+  font-weight:400;
 }
 .emi-calculator .columns > div > div h3 {
   font-size: 24px;
@@ -430,7 +438,11 @@ main > .section.social-section > div{
     justify-content: space-between;
   }
 }
+.tab-content .columns-wrapper{
 
+  padding: 4.03633vw 12px 3.02725vw;
+
+}
 .main-image ul {
 display: block;
     margin: 0;
@@ -542,21 +554,91 @@ margin-top:25px
   background: #eae9e7;
   color: #000;
   border: 1px solid  #eae9e7;
-  margin: 0;
-  font-size: 1.25vw;
-  padding: .83333vw 3.38542vw;
+  display: block;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px)  {        
+  main > .section > div{
+    padding:0 12px;
+    max-width: 45pc;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
   main > .section > div{
     padding:0 12px;
   }
+
   .section.tab-content .columns-img-col+div h2{
     font-size: 26px;
-        margin-bottom: 15px;
+     margin-bottom: 15px;
+
   }
+
   .section.tab-content .columns-img-col+div p:first-of-type{
     font-size: 18px;
-        margin-bottom: 15px;
+    margin-bottom: 15px;
+
   }
+
+}
+
+@media (max-width: 991.98px) {
+  .tab-section .default-content-wrapper > ul{
+    display: block;
+  }
+
+  .tab-section .default-content-wrapper > ul li{
+    font-size: 18px;
+    text-align: left;
+    padding: 1.61453vw 2.01816vw;
+    display: none;
+
+  }
+
+  .tab-section .default-content-wrapper > ul li:first-child {
+    font-family: GillSans-SemiBold;
+    background: #eae9e7;
+    border: 1px solid #eae9e7;
+
+}
+
+.tab-footer a.button:any-link,.mg-motors-spec-accordion .default-content-wrapper .button-container .button{
+  font-size: 14px;
+  padding: 5px 10px;
+
+}
+
+.tab-section h2{
+  font-size: 3.02725vw;
+  padding-bottom: 3.02725vw;
+}
+
+.mg-motors-spec-accordiontitle h2{
+  font-size: 3.02725vw;
+}
+
+.mg-motors-keytitle > div  {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 991.98px) {
+  .section.tab-content .columns-img-col+div h2{
+    font-size: 2.62361vw;
+     margin-bottom: 15px;
+  }
+
+  .section.tab-content .columns-img-col+div p{
+    font-size: 1.81635vw;
+  }
+
+  .section.tab-content .columns-img-col+div p:first-of-type{
+    font-size: 1.81635vw;
+    margin-bottom: 15px;
+  }
+
 }

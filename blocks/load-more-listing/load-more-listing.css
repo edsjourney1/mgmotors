@@ -30,7 +30,7 @@ main>.section.load-more-listing-container {
     background: #000;
     color: #fff;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 1.04167vw;
     font-family: Roboto-Medium;
     padding: 8px 18px;
     -webkit-transition: all 1s linear;
@@ -38,7 +38,11 @@ main>.section.load-more-listing-container {
     margin: 20px auto;
     display: block;
 }
-
+.section.load-more-listing-container button:hover{
+    background: #cf2230 !important;
+    color: #fff !important;
+    border-color: #cf2230;
+}
 
 @media (max-width: 992px) {
     .load-more-listing {
