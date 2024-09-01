@@ -226,6 +226,7 @@
     display: block;
     width: fit-content;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .mg-motors-spec-accordion details.accordion-item .accordion-item-body h3 a:hover {
