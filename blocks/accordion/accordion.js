@@ -58,8 +58,8 @@ export default function decorate(block) {
         const targetTabId = event.target.getAttribute('data-tab');
 
         // Remove active class from all tabs and contents
-        tabTitlesContainer.querySelectorAll('.tab-title').forEach(title => title.classList.remove('active'));
-        tabContentsContainer.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        tabTitlesContainer.querySelectorAll('.mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title').forEach(title => title.classList.remove('active'));
+        tabContentsContainer.querySelectorAll('.mg-motors-accordion .accordion-item .accordion-item-body .tab-content').forEach(content => content.classList.remove('active'));
 
         // Add active class to clicked tab and corresponding content
         event.target.classList.add('active');
@@ -68,7 +68,7 @@ export default function decorate(block) {
     });
 
     // Activate the first tab by default
-    const firstTabTitle = tabTitlesContainer.querySelector('.tab-title');
+    const firstTabTitle = tabTitlesContainer.querySelector('.mg-motors-accordion .accordion-item .accordion-item-body .tab-titles .tab-title');
     if (firstTabTitle) {
       firstTabTitle.classList.add('active');
       document.getElementById(firstTabTitle.getAttribute('data-tab')).classList.add('active');
