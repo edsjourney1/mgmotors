@@ -146,6 +146,32 @@ main>.section.social-section>div {
   }
 }
 
+@media (min-width: 576px) {
+  main > .section.social-section > div{
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  main > .section.social-section > div{
+      max-width: 45pc;
+  }
+}
+@media (min-width: 992px) {
+  main > .section.social-section > div{
+      max-width: 60pc;
+  }
+}
+@media (min-width: 1200px) {
+  main > .section.social-section > div{
+      max-width: 855pt;
+  }
+}
+@media (min-width: 1500px) {
+  main > .section.social-section > div{
+      max-width: 975pt;
+  }
+}
+
 .mg-motors-spec-accordion.section,
 .mg-motors-spec-accordiontitle.section {
   max-width: 975pt;
@@ -424,14 +450,12 @@ main>.section.social-section>div {
 }
 
 .emi-calculator .columns>div>div:last-child p {
-  font-size: 1.250vw;
   line-height: 24px;
   font-family: GillSans-SemiBold;
   padding-bottom: 26px;
 }
 
 .emi-calculator .columns>div>div:last-child h3 {
-  font-size: 1.875vw;
   line-height: 36px;
   font-family: roboto-bold;
 }
