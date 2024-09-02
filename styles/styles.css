@@ -9,7 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
- @import url(fonts.css);
+@import url(fonts.css);
 
 :root {
   /* colors */
@@ -19,20 +19,20 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-  --black:#000000;
-  --white:#ffffff;
+  --black: #000000;
+  --white: #ffffff;
 
   /* fonts */
-  --body-font-family: Roboto-Regular  , sans-serif;
+  --body-font-family: Roboto-Regular, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-  --nav-font-family: GillSans-Light,sans-serif;
+  --nav-font-family: GillSans-Light, sans-serif;
   --heading-font-family: GillSans-Bold, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
-  --nav-font-size:15px;
+  --nav-font-size: 15px;
 
   /* heading sizes */
   --heading-font-size-xxl: 55px;
@@ -103,6 +103,7 @@
   src: url('../fonts/Gill-Sans-Bold.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: GillSans-SemiBold;
   font-style: normal;
@@ -111,6 +112,7 @@
   src: url('../fonts/Gill-Sans-SemiBold.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: GillSans-medium;
   font-style: normal;
@@ -119,6 +121,7 @@
   src: url('../fonts/GillSans-Medium.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: GillSans-regular;
   font-style: normal;
@@ -127,6 +130,7 @@
   src: url('../fonts/GillSans.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: roboto-medium;
   font-style: normal;
@@ -135,6 +139,7 @@
   src: url('../fonts/roboto-medium.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: GillSans-Light;
   font-style: normal;
@@ -143,7 +148,8 @@
   src: url('../fonts/GillSans-Light.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@media (width >= 900px) {
+
+@media (width >=900px) {
   :root {
     /* body sizes */
     --body-font-size-m: 18px;
@@ -163,13 +169,14 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: none;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   line-height: 1.6;
 }
 
@@ -205,12 +212,29 @@ h6 {
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
 
 p,
 dl,
@@ -220,6 +244,7 @@ pre,
 blockquote {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  font-family: roboto;
 }
 
 code,
@@ -235,7 +260,7 @@ pre {
   white-space: pre;
 }
 
-main > div {
+main>div {
   margin: 40px 16px;
 }
 
@@ -321,22 +346,22 @@ main img {
 }
 
 /* sections */
-main > .section {
+main>.section {
   margin: 40px 0;
 }
 
-main > .section > div {
+main>.section>div {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
 }
 
-main > .section:first-of-type {
+main>.section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
+@media (width >=900px) {
+  main>.section>div {
     padding: 0 100px;
   }
 }
@@ -348,33 +373,39 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
-@media (width >= 900px) {
-  main > .section.faq-section , 
-  .section.emi-calculator.columns-container >div,
-  .section.card-carousel-container > div ,
-  .mg-motors-spec-accordion.section, .mg-motors-spec-accordiontitle.section,
+
+@media (width >=900px) {
+
+  main>.section.faq-section,
+  .section.emi-calculator.columns-container>div,
+  .section.card-carousel-container>div,
+  .mg-motors-spec-accordion.section,
+  .mg-motors-spec-accordiontitle.section,
   .section.tab-section .default-content-wrapper,
   .section.main-image .columns-wrapper,
-  main > .section > div
-  {
-      max-width: 1700px;
-      margin: 0 auto;
+  main>.section>div {
+    max-width: 1700px;
+    margin: 0 auto;
   }
-  .tab-content .columns-wrapper{
-    padding:3.125vw 0;
+
+  .tab-content .columns-wrapper {
+    padding: 3.125vw 0;
   }
-  main > .section.tab-section .default-content-wrapper{
-    padding:12px;
-  }
-}
-@media (max-width: 991.98px){
-  main > .section.faq-section {
-    margin-left:auto;
-    margin-right:auto;
-     max-width: 45pc;
+
+  main>.section.tab-section .default-content-wrapper {
+    padding: 12px;
   }
 }
-.section.comet-hero{
+
+@media (max-width: 991.98px) {
+  main>.section.faq-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45pc;
+  }
+}
+
+.section.comet-hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -384,86 +415,99 @@ main .section.highlight {
   min-height: calc(100vh - 60px);
   background-position-y: bottom;
   padding-top: 18vw;
-  background-image:url('../files/comet-back.webp');
+  background-image: url('../files/comet-back.webp');
 }
-.hidden{display:none!important;}
+
+.hidden {
+  display: none !important;
+}
 
 
 @media (max-width: 768px) {
-  .section.comet-hero{
-    background-image:url('../files/comet-back-mob.webp');
+  .section.comet-hero {
+    background-image: url('../files/comet-back-mob.webp');
     background-position-y: top;
     padding-top: 40vw;
   }
- 
-  
+
+
 }
-.tab-footer p{
+
+.tab-footer p {
   font-family: roboto-medium;
   text-align: right;
   font-size: 10.0px;
 }
-.tab-footer a.button:any-link{
+
+.tab-footer a.button:any-link {
   background-color: #cf2230;
   padding: .52083vw 1.5625vw;
-    color: #fff;
-    font-size: 1.04167vw;
-    border-radius: 6px;
-    font-weight: 500;
-    font-family: roboto-medium;
-    transition: all 1s linear;
-}
-.tab-footer p.button-container{
-  text-align: center;
-}
-.tab-section h2{
-  font-size: 2.08333vw;
-    color: #cf2230;
-    font-family: 'GillSans-semibold';
-    text-align: center;
-    padding-bottom: 3.125vw;
-    margin: 0;
-}
-main > .section.tab-section{
-  padding: 3.125vw 0;
-  margin: 0;
-  padding-bottom: 0;;
-}
-.tab-section ul{
-  display: flex;
-}
-.tab-section ul li{
-  list-style:none;
-}
-.mg-motors-spec-accordiontitle h2{
-  color: #cf2230;
-    text-align: center;
-    padding-bottom: 48px;
-    margin-bottom: 0;
-    font-family: 'GillSans-semibold';
-    font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
-    font-size: 2.08333vw;
-    font-weight: 500;
+  color: #fff;
+  font-size: 1.04167vw;
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: roboto-medium;
+  transition: all 1s linear;
 }
 
-.tab-content picture.active::before{
-    content: "";
-    top: 2px;
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
-    right: 2px;
-    border: 2px solid #fff;
-    z-index: 5;
-    border-radius: 6px;
-    opacity: .7;
+.tab-footer p.button-container {
+  text-align: center;
 }
-.tab-content picture.active::after{
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, .3);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+.tab-section h2 {
+  font-size: 2.08333vw;
+  color: #cf2230;
+  font-family: 'GillSans-semibold';
+  text-align: center;
+  padding-bottom: 2.125vw;
+  margin: 0;
+}
+
+main>.section.tab-section {
+  padding: 3.125vw 0;
+  margin: 0 auto;
+  padding-bottom: 0;
+  max-width: 975pt;
+}
+
+.tab-section ul {
+  display: flex;
+}
+
+.tab-section ul li {
+  list-style: none;
+}
+
+.mg-motors-spec-accordiontitle h2 {
+  color: #cf2230;
+  text-align: center;
+  padding-bottom: 48px;
+  margin-bottom: 0;
+  font-family: 'GillSans-semibold';
+  font-size: clamp(1.563rem, 0.875vw + 1.289rem, 2rem);
+  font-size: 2.08333vw;
+  font-weight: 500;
+}
+
+.tab-content picture.active::before {
+  content: "";
+  top: 2px;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  border: 2px solid #fff;
+  z-index: 5;
+  border-radius: 6px;
+  opacity: .7;
+}
+
+.tab-content picture.active::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, .3);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
