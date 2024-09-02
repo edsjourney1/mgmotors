@@ -470,6 +470,12 @@ main>.section.social-section>div {
   .emi-calculator .columns>div>div{
     max-width: 100%;
   }
+  .emi-calculator .columns>div>div:last-child h3{
+    font-size: 3.63269vw;
+  }
+  .emi-calculator .columns>div>div:last-child p{
+    font-size: 2.4218vw;
+  }
   .emi-calculator .columns-wrapper {
     margin-top: 85px !important;
   }
