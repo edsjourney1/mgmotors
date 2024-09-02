@@ -796,6 +796,32 @@ main>.section.social-section>div {
     padding: 5px 10px;
 
   }
+  .mg-motors-spec-accordion .columns-wrapper .columns.block{
+    width: 80%;
+    padding:30px 0;
+  }
+  .mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col picture{
+    position: absolute;
+
+    right: -180px;
+    top: 0;
+    transform: translate(0, 0);
+    width: 98%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p{
+    font-size: 5.55556vw;
+    margin:0;
+    margin-bottom:10px;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2){
+    font-size: 8.33333vw;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::after{
+    width:36%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::before{
+    right: -40%;
+  }
 }
 
 
