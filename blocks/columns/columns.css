@@ -357,7 +357,8 @@ main>.section.social-section>div {
 .emi-calculator .columns>div>div {
   width: 33.33%;
   flex: 0 0 auto;
-  padding: 20px 12px;
+  padding: 30px 12px;
+  max-width: 450px;;
 }
 
 .emi-calculator .columns>div>div p {
@@ -428,7 +429,7 @@ main>.section.social-section>div {
 .emi-calculator .columns>div>div:last-child {
   position: absolute;
   right: -158px;
-  width: 158px;
+  width: 240px;
   padding: 20px;
 }
 
@@ -453,18 +454,22 @@ main>.section.social-section>div {
   line-height: 24px;
   font-family: GillSans-SemiBold;
   padding-bottom: 26px;
+  font-size: 1.250vw;
 }
 
 .emi-calculator .columns>div>div:last-child h3 {
   line-height: 36px;
   font-family: roboto-bold;
+  font-size: 1.875vw;
 }
 
 @media (max-width: 991px) {
   .emi-calculator {
     margin-top: 40px !important;
   }
-
+  .emi-calculator .columns>div>div{
+    max-width: 100%;
+  }
   .emi-calculator .columns-wrapper {
     margin-top: 85px !important;
   }
