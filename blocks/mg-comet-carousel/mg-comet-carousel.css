@@ -135,9 +135,9 @@
   transform: translate(-50%, -50%) rotate(45deg);
   left: calc(50% - 2px);
 }
-.comet-hero h5, comet-hero h6{
+/* .comet-hero h5, comet-hero h6{
   font-family: 'GillSans-SemiBold;'
-}
+} */
 @media (width >= 600px) {
   .mg-comet-carousel .carousel-navigation-buttons {
     left: 24px;
