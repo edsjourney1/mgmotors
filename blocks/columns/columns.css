@@ -37,7 +37,7 @@
   padding: 24px 0;
 }
 main > .section.social-section > div{
-  
+  max-width:1300px;
   padding-inline: 0;
 }
 .social-section .columns > div > div > p .icon{
