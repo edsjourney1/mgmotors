@@ -395,6 +395,9 @@ main .section.highlight {
   main>.section.tab-section .default-content-wrapper {
     padding: 12px;
   }
+  main>.section>div.card-carousel{
+    padding:0;
+  }
 }
 
 @media (max-width: 991.98px) {

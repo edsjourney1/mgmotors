@@ -38,7 +38,7 @@
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item.active {
 	opacity: 1;
-	margin-right: 15px;
+	margin-right: 22px;
 }
 
 .card-carousel-container div.card-carousel.block ul.card-list > li.card-item.active:last-child {
@@ -367,5 +367,9 @@
 	}
 	.card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-title > p:nth-child(5){
 		font-size: 36px;
+		font-family: roboto-medium;
+	}
+	.card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-title .button-container a{
+		font-size: 20px;
 	}
 }
