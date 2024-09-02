@@ -583,6 +583,7 @@ margin-top:25px
   .main-image li{
     width: auto;
     float: none;
+    font-size: 14px;
   }
   .main-image li picture{    width: 125px; }
   .main-image ul::-webkit-scrollbar {
@@ -597,7 +598,7 @@ margin-top:25px
 
   .tab-content picture.active::after {
     content: none;
-    font-size: 10px;
+
   }
 }
 
