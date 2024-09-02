@@ -290,6 +290,55 @@
       }
 }
 
+/* Test Drive form */
+.section.two-col-form.test-drive-form {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+.section.two-col-form > div{
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+}
+.test-drive-form {
+  display: grid;
+  grid-gap:12px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:auto 1fr auto 1fr;
+}
+.test-drive-form div:nth-child(1){
+  grid-row: 2/2;
+}
+.test-drive-form div:nth-child(2){
+  grid-column-start:2;
+  grid-column-end:3;
+  padding-inline: 15px;
+}
+.test-drive-form div:nth-child(3){
+  grid-column: 2/2;
+}
+.test-drive-form div:nth-child(4){
+  grid-column: 2/3;
+}
+.test-drive-form div:nth-child(5){
+  grid-column: 2/4;
+}
+.test-drive-form .columns-wrapper .testdrive-formtext div div h2{
+ text-align: left;
+ font-weight: 500;
+}
+
+.test-drive-form .columns-wrapper .columns div div p span{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+.test-drive-form .columns-wrapper .columns div div p span svg{
+  width: 40.3px;
+  height: 29.29px;
+}
+
 @media (max-width: 991px) {
   .section.two-col-form h2{
     font-size: 3.02725vw;
