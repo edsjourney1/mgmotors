@@ -625,12 +625,13 @@ margin-top:25px
   .mg-motors-spec-accordiontitle h2{
     font-size: 3.02725vw;
   }
+  .tab-footer a.button:any-link,.mg-motors-spec-accordion .default-content-wrapper .button-container .button{
+    font-size: 14px;
+    padding: 5px 10px;
+  
+  }
 }
-.tab-footer a.button:any-link,.mg-motors-spec-accordion .default-content-wrapper .button-container .button{
-  font-size: 14px;
-  padding: 5px 10px;
 
-}
 
 
 
