@@ -594,6 +594,11 @@ margin-top:25px
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+  .tab-content picture.active::after {
+    content: none;
+    font-size: 10px;
+  }
 }
 
 
