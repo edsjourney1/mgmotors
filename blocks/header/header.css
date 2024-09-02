@@ -128,7 +128,15 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   bottom: 3px;
   transform: rotate(-45deg);
 }
-
+.section.nav-sections a.button:any-link{
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: navajowhite;
+  line-height: 30px;
+  display: inline;
+  font-family: 'roboto';
+}
 @media (width >= 900px) {
   header nav .nav-hamburger {
     display: none;

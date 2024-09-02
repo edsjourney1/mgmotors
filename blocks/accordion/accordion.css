@@ -403,6 +403,7 @@
   .mg-motors-spec-accordion.columns-container, .mg-motors-spec-accordion .columns-wrapper{
     max-width: 100%;
     width: 100%;
+    
   }
   .tab-footer a.button:any-link,
   .mg-motors-spec-accordion .default-content-wrapper .button-container .button {
