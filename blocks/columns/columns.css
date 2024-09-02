@@ -424,14 +424,14 @@ main>.section.social-section>div {
 }
 
 .emi-calculator .columns>div>div:last-child p {
-  font-size: 16px;
+  font-size: 1.250vw;
   line-height: 24px;
   font-family: GillSans-SemiBold;
   padding-bottom: 26px;
 }
 
 .emi-calculator .columns>div>div:last-child h3 {
-  font-size: 24px;
+  font-size: 1.875vw;
   line-height: 36px;
   font-family: roboto-bold;
 }
@@ -712,13 +712,34 @@ main>.section.social-section>div {
     border: 2px solid;
     border-width: 2px 2px 0 0;
     transition: transform 0.2s;
-  }
+}
+.main-image ul{
+  overflow-x: auto;
+  display: flex;
+}
+.main-image li{
+  width: auto;
+  float: none;
+  font-size: 14px;
+}
+.main-image li picture{    width: 150px; }
+.main-image ul::-webkit-scrollbar {
+  display: none;
+}
+
+.main-image ul {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
 }
 
 @media (max-width: 575.98px) {
-  .tab-section .default-content-wrapper>ul {
-    border: 3px solid #eae9e7;
-    border-radius: 8px 8px 0 0;
+  .main-image li picture{    width: 125px; }
+  .tab-section .default-content-wrapper > ul{
+  border: 3px solid #eae9e7;
+        border-radius: 8px 8px 0 0;
   }
 
   .tab-section .default-content-wrapper>ul li {
@@ -803,4 +824,4 @@ main>.section.social-section>div {
     font-size: 7.22222vw;
     margin-bottom: 15px;
   }
-}
+  }

@@ -511,3 +511,15 @@ main>.section.tab-section {
   left: 0;
   right: 0;
 }
+
+@media (max-width: 991.98px) {
+
+  .tab-content picture.active::after {
+    content: none;
+
+  }
+  .tab-content picture.active::before {
+    content: none;
+
+  }
+}

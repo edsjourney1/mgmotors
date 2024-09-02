@@ -233,15 +233,15 @@
 }
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
-  font-size: 3.04167vw;
   font-family: Roboto-Medium;
+  line-height: 32px;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
     font-size: 1.04167vw;
   }
-}
+} */
 
 .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li strong {
   display: inline-block;
@@ -277,7 +277,7 @@
 @media screen and (min-width: 600px) {
   .mg-motors-accordion .accordion-item .accordion-item-body .tab-content ul li {
     padding: .52083vw 1.5625vw;
-    font-size: 1.04167vw;
+    /* font-size: 1.04167vw; */
   }
 }
 
