@@ -366,10 +366,10 @@ main>.section.social-section>div {
 }
 
 .emi-calculator .columns>div>div {
-  width: 33.33%;
+  width: 30%;
   flex: 0 0 auto;
   padding: 30px 12px;
-  max-width: 450px;;
+  max-width: 450px;
 }
 
 .emi-calculator .columns>div>div p {
@@ -797,42 +797,6 @@ main>.section.social-section>div {
     padding-bottom: 3.02725vw;
   }
 
-  .mg-motors-spec-accordiontitle h2 {
-    font-size: 3.02725vw;
-  }
-
-  .tab-footer a.button:any-link,
-  .mg-motors-spec-accordion .default-content-wrapper .button-container .button {
-    font-size: 14px;
-    padding: 5px 10px;
-
-  }
-  .mg-motors-spec-accordion .columns-wrapper .columns.block{
-    width: 80%;
-    padding:30px 0;
-  }
-  .mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col picture{
-    position: absolute;
-
-    right: -180px;
-    top: 20px;
-    transform: translate(0, 0);
-    width: 98%;
-  }
-  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p{
-    font-size: 5.55556vw;
-    margin:0;
-    margin-bottom:10px;
-  }
-  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2){
-    font-size: 8.33333vw;
-  }
-  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::after{
-    width:36%;
-  }
-  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::before{
-    right: -40%;
-  }
 }
 
 

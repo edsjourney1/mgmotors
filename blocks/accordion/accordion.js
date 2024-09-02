@@ -98,7 +98,7 @@ export default function decorate(block) {
 
   var techSpecHdng = document.querySelector(".mg-motors-keytitle div[data-align]");
   var accordionWrap = document.querySelector('.mg-motors-spec-accordion .accordion-wrapper');
-  if (window.innerWidth < 767) {
+  if (window.innerWidth < 900) {
     accordionWrap.insertBefore(techSpecHdng, accordionWrap.firstChild);
   }
 

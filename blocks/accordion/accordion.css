@@ -332,6 +332,48 @@
     padding-top: 2.01816vw;
     padding-bottom: 2.01816vw;
   }
+  .mg-motors-spec-accordion .columns-wrapper{
+    width: 80%;
+    margin-left:0;
+  }
+   .mg-motors-spec-accordion .accordion-wrapper{
+    width: 100%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col picture{
+    transform: translate(0%, 0%);
+    width: 75%;
+    top: -93px;
+    right: -254px;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::after{
+    width:40%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2){
+    margin-top:0;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::before{
+    right: -41%;
+    top: 10px;
+  }
+  .mg-motors-spec-accordion.columns-container{
+    max-width:45pc;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p{
+    font-size: 2.01816vw;
+    margin-top:0;
+    margin-bottom: 10px;;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2){
+    font-size: 3.02725vw;
+    padding: 10px 0;
+  }
+  .mg-motors-spec-accordiontitle h2{
+    font-size: 3.02725vw;
+  }
+  .mg-motors-spec-accordion .columns-wrapper .columns.block{
+    padding:30px 0;
+  }
+ 
 }
 
 @media (min-width: 768px) {
@@ -349,6 +391,51 @@
   }
   
 }
+
+@media (max-width: 575.98px) {
+
+
+  .mg-motors-spec-accordiontitle h2 {
+    font-size: 3.02725vw;
+  }
+  .mg-motors-spec-accordion.columns-container, .mg-motors-spec-accordion .columns-wrapper{
+    max-width: 100%;
+    width: 100%;
+  }
+  .tab-footer a.button:any-link,
+  .mg-motors-spec-accordion .default-content-wrapper .button-container .button {
+    font-size: 14px;
+    padding: 5px 10px;
+
+  }
+  .mg-motors-spec-accordion .columns-wrapper .columns.block{
+    width: 80%;
+    padding:30px 0;
+  }
+  .mg-motors-spec-accordion .columns-wrapper .columns .columns-img-col picture{
+    position: absolute;
+        right: -71px;
+        top: -12px;
+        transform: translate(0, 0);
+        width: 68%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p{
+    font-size: 5.55556vw;
+    margin:0;
+    margin-bottom:10px;
+ 
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2){
+    font-size: 8.33333vw;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::after{
+    width:36%;
+  }
+  .mg-motors-spec-accordion .columns-wrapper>.columns>div>div>p:nth-child(2)::before{
+    right: -40%;
+  }
+}
+
 
 @media (max-width: 575.98px) {
   .faq-section h2 {

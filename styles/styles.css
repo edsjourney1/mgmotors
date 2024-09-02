@@ -395,7 +395,7 @@ main .section.highlight {
   main>.section.tab-section .default-content-wrapper {
     padding: 12px;
   }
-  main>.section>div.card-carousel{
+  main>.section>div.card-carousel,      main>.section.emi-calculator>div{
     padding:0;
   }
 }
@@ -466,11 +466,11 @@ main .section.highlight {
   margin: 0;
 }
 
-main>.section.tab-section {
+main>.section.tab-section.accessories, main>.section.tab-section.has-it-all {
   padding: 3.125vw 0;
   margin: 0 auto;
   padding-bottom: 0;
-  max-width: 975pt;
+ 
 }
 
 .tab-section ul {
@@ -524,5 +524,8 @@ main>.section.tab-section {
   .tab-content picture.active::before {
     content: none;
 
+  }
+  .tab-footer a.button:any-link{
+            font-size: 3.02725vw;
   }
 }
