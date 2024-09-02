@@ -40,9 +40,8 @@ function loadListItems() {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const itemsToLoad = dataItems.slice(startIndex, endIndex);
-    console.log(itemsToLoad)
     itemsToLoad.forEach((fd) => {
-        container.innerHTML += `<div class="field-wrapper"><a href="${fd.Id}">${fd.Label}</a></div>`;
+        container.innerHTML += `<div class="field-wrapper"><a href="${fd.Value}" target="_blank">${fd.Label}</a></div>`;
     });
     currentPage++;
 
