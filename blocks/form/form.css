@@ -340,6 +340,8 @@
   border-bottom: 2px solid #afc2e3; 
   padding-bottom: 20px;
   margin-top: 48px;
+  font-family: GillSans-regular;
+  font-size: 19.2px;
 
 }
 .test-drive-form .columns-wrapper .columns div div p span svg{
