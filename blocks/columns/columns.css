@@ -760,25 +760,27 @@ main>.section.social-section>div {
     border-width: 2px 2px 0 0;
     transition: transform 0.2s;
 }
-.main-image ul{
-  overflow-x: auto;
-  display: flex;
-}
-.main-image li{
-  width: auto;
-  float: none;
-  font-size: 14px;
-}
-.main-image li picture{    width: 150px; }
-.main-image ul::-webkit-scrollbar {
-  display: none;
-}
+    .main-image ul{
+      overflow-x: auto;
+      display: flex;
+    }
+    .main-image li{
+      width: auto;
+      float: none;
+      font-size: 14px;
+    }
+    .main-image li picture{    width: 150px; }
+    .main-image ul::-webkit-scrollbar {
+      display: none;
+    }
 
-.main-image ul {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
+    .main-image ul {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .emi-calculator .columns>div>div h3{
+      font-size: 3.63269vw;
+    }
 
 }
 
