@@ -215,8 +215,19 @@ main>.section.social-section>div {
     width: 100%;
   }
 
-  .mg-motors-spec-accordiontitle.columns-container>div.columns-wrapper>div>div>div>p {
-    font-size: 2.875vw;
+  .mg-motors-spec-accordiontitle.columns-container>div.columns-wrapper>div>div>div>p{
+    font-size: 6.11111vw;
+    text-align: center;
+    align-items: center;
+    margin-top:0;
+  }
+  .accordion-wrapper div[data-align] {
+    font-size: 6.11111vw;
+    text-align: center;
+    align-items: center;
+  }
+  .columns.mg-motors-keytitle > div{
+    justify-content: center;
   }
 }
 
@@ -804,7 +815,7 @@ main>.section.social-section>div {
     position: absolute;
 
     right: -180px;
-    top: 0;
+    top: 20px;
     transform: translate(0, 0);
     width: 98%;
   }
@@ -883,6 +894,6 @@ main>.section.social-section>div {
 
   .mg-motors-spec-accordiontitle h2 {
     font-size: 7.22222vw;
-    margin-bottom: 15px;
+    padding-bottom: 43px;
   }
   }

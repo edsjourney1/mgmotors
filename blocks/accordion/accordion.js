@@ -95,6 +95,13 @@ export default function decorate(block) {
     const accordionBody = accordionItem.querySelector('.mg-motors-accordion .accordion-item .accordion-item-body');
     initializeTabs(accordionBody, index);
   });
+
+  var techSpecHdng = document.querySelector(".mg-motors-keytitle div[data-align]");
+  var accordionWrap = document.querySelector('.mg-motors-spec-accordion .accordion-wrapper');
+  if (window.innerWidth < 767) {
+    accordionWrap.insertBefore(techSpecHdng, accordionWrap.firstChild);
+  }
+
 }
 
 
