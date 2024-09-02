@@ -135,7 +135,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   border: navajowhite;
   line-height: 30px;
   display: inline;
-  font-family: 'roboto';
+  font-family: GillSans-Light;
 }
 @media (width >= 900px) {
   header nav .nav-hamburger {
