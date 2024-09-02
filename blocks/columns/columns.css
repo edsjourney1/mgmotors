@@ -82,12 +82,12 @@ main > .section.social-section > div{
 
 .social-section .columns > div > div p:nth-child(2) {
   font-family: GillSans-medium;
-  font-size: 1rem; 
+  font-size: 13px; 
 }
 
 .social-section .columns > div > div p:nth-child(3) {
   color: #6e6e6e;
-  font-size: 0.7em; 
+  font-size: 12px; 
 }
 
 @media (max-width: 900px) {
