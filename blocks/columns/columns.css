@@ -375,7 +375,7 @@ main>.section.social-section>div {
 .emi-calculator .columns>div>div p {
   line-height: 18px;
   color: #000;
-  font-family: GillSans-regular;
+  font-family: 'GillSans-regular';
   margin: 0;
   padding-bottom: 14px;
 }
@@ -383,7 +383,7 @@ main>.section.social-section>div {
 .emi-calculator .columns>div>div h4 {
   line-height: 24px;
   color: #000;
-  font-family: roboto-medium;
+  font-family: 'roboto-medium';
   margin: 0;
   position: relative;
   padding-bottom: 35px;
@@ -391,11 +391,12 @@ main>.section.social-section>div {
 }
 
 .emi-calculator .columns>div>div h3 {
-  font-size: 24px;
+  font-size: 1.875vw;
   line-height: 28px;
   color: #000;
-  font-family: roboto-medium;
+  font-family: 'roboto-medium';
   margin: 0;
+  font-weight:500;
 }
 
 .emi-calculator .columns>div>div h4:after {
@@ -859,5 +860,8 @@ main>.section.social-section>div {
   .mg-motors-spec-accordiontitle h2 {
     font-size: 7.22222vw;
     padding-bottom: 43px;
+  }
+  .emi-calculator .columns>div>div h3{
+    font-size: 7.22222vw;
   }
   }
