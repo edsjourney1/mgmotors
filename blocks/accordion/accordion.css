@@ -373,7 +373,9 @@
   .mg-motors-spec-accordion .columns-wrapper .columns.block{
     padding:30px 0;
   }
- 
+  .tab-section h2{
+    font-size: 3.02725vw;
+  }
 }
 
 @media (min-width: 768px) {
@@ -396,7 +398,7 @@
 
 
   .mg-motors-spec-accordiontitle h2 {
-    font-size: 3.02725vw;
+    font-size: 7.22222vw;
   }
   .mg-motors-spec-accordion.columns-container, .mg-motors-spec-accordion .columns-wrapper{
     max-width: 100%;

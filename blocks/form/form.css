@@ -289,3 +289,9 @@
         width: 100%;
       }
 }
+
+@media (max-width: 991px) {
+  .section.two-col-form h2{
+    font-size: 3.02725vw;
+  }
+}

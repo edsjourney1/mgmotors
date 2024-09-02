@@ -317,6 +317,10 @@
 	}
 }
 @media (width <= 991px) {
+	.card-carousel-container .default-content-wrapper h1{
+		font-size: 3.02725vw;
+	}
+	      
 	.card-carousel-container div.card-carousel.block ul.card-list > li.card-item .cards-card-title h2 {
 		font-size: 24px;
 	}
