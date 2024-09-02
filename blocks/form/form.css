@@ -328,10 +328,18 @@
  text-align: left;
  font-weight: 500;
 }
+.test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
+  font-family: roboto-regular;
+  font-size: 16px;
+  
+ }
 
-.test-drive-form .columns-wrapper .columns div div p span{
-  display: inline-block;
-  margin-right: 20px;
+.test-drive-form .columns-wrapper .columns div div p + p{
+  display: flex;
+  gap: 30px; 
+  border-bottom: 2px solid #afc2e3; 
+  padding-bottom: 20px;
+  margin-top: 48px;
 
 }
 .test-drive-form .columns-wrapper .columns div div p span svg{
