@@ -82,12 +82,12 @@ main > .section.social-section > div{
 
 .social-section .columns > div > div p:nth-child(2) {
   font-family: GillSans-medium;
-  font-size: 13px; 
+  font-size: 1rem; 
 }
 
 .social-section .columns > div > div p:nth-child(3) {
   color: #6e6e6e;
-  font-size: 12px; 
+  font-size: 0.8em; 
 }
 
 @media (max-width: 900px) {
@@ -103,8 +103,8 @@ main > .section.social-section > div{
     border-right: none;
     margin-bottom: 3.02725vw;
     padding: 12px;
-        text-align: center;
-        justify-content: flex-start;
+    text-align: center;
+    justify-content: flex-start;
   }
 
 
