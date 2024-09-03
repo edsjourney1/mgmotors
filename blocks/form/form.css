@@ -376,6 +376,23 @@
   margin-block:0;
 }
 /* form */
+.test-drive-form div:nth-child(6) .form-select-wrapper select{
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  height: 35px;
+  background: url('../../icons/chevron_right.svg') no-repeat 100%, #fff;
+  background-size: 30px 8px !important;
+  padding-right: 30px;
+}
+.section.two-col-form.test-drive-form div:nth-child(6)  .form .field-wrapper{
+  padding-right: 30px;
+} 
 .section.two-col-form.test-drive-form .form .field-wrapper{
   padding-inline: 0;
 }
