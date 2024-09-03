@@ -359,11 +359,15 @@
   font-size: 19.2px;
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom:0;
   
 }
 .test-drive-form .columns-wrapper .columns div div p span svg{
   width: 40.3px;
   height: 29.29px;
+}
+.test-drive-form .form-wrapper .form div div p{
+  margin-block:0;
 }
 /* form */
 .section.two-col-form.test-drive-form .form .field-wrapper{
