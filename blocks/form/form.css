@@ -389,7 +389,9 @@
   background: url('../../icons/chevron_right.svg') no-repeat 100%, #fff;
   background-size: 30px 8px !important;
   padding-right: 30px;
-  font-fmaily:14px;
+  font-size:14px;
+  color: #131313;
+  font-family:roboto;
 }
 .section.two-col-form.test-drive-form div:nth-child(6)  .form .field-wrapper{
   padding-right: 30px;
