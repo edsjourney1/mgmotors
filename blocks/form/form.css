@@ -298,26 +298,26 @@
   width: 100%;
 }
 .section.two-col-form.test-drive-form > div{
-  padding: 0;
+  padding: 12px;
   max-width: 100%;
   margin: 0;
 }
 .test-drive-form {
   display: grid;
-  grid-gap: 24px;
+  grid-column-gap: 24px;
   grid-template-columns: repeat(2, 1fr);
 }
 .test-drive-form div:nth-child(1){
   grid-column: 2/3;
+  grid-row: 1/2;
 }
 .test-drive-form div:nth-child(2){
+  grid-column: 1/2;
   grid-row: 2/3;
+
 }
 .test-drive-form div:nth-child(3){
   display: none;
-  grid-column: 2/3;
-  grid-row: 3 / 4;  
-
 }
 .test-drive-form div:nth-child(4){
   grid-column: 2/3; 
@@ -325,6 +325,7 @@
 }
 .test-drive-form div:nth-child(5){
   grid-column: 2/4;
+  grid-row: 3/4;
 }
 .test-drive-form div:nth-child(6){
   grid-column: 2/4;
@@ -333,26 +334,55 @@
 .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
  text-align: left;
  font-weight: 500;
+ margin-bottom: 20px;
+
 }
 .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
   font-family: roboto;
-  font-size: 16px;
+  font-size: 1.042vw;
+  margin:0;
  }
 
 .test-drive-form div:nth-child(5) .columns div div > p , .test-drive-form div:nth-child(3) .columns div div > p , .test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
   display: flex;
+  align-items: center;
   gap: 30px; 
   border-bottom: 2px solid #afc2e3; 
   padding-bottom: 20px;
   margin-top: 48px;
   font-family: GillSans-regular;
   font-size: 19.2px;
-  padding-right: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  
 }
 .test-drive-form .columns-wrapper .columns div div p span svg{
   width: 40.3px;
   height: 29.29px;
 }
+/* form */
+.section.two-col-form.test-drive-form .form .field-wrapper{
+  padding-inline: 0;
+}
+.section.two-col-form.test-drive-form .form label {
+  font-family: GillSans-regular;
+  font-size: 1pc;
+  margin-bottom: 0.5rem;
+}
+.section.two-col-form.test-drive-form .form .form-checkbox-wrapper input{
+left: 0;
+}
+.section.two-col-form.test-drive-form .form .field-wrapper.form-authorise {
+  margin-top: 10px;
+}
+.section.two-col-form.test-drive-form .form .field-wrapper.form-privacy {
+  margin-top: 10px;
+  display: none;
+}
+.section.two-col-form.test-drive-form .form .form-submit{
+text-align: left;
+}
+
 @media (max-width: 991px) {
   .test-drive-form {
     display:block;
@@ -367,7 +397,62 @@
    .test-drive-form div:nth-child(4) .columns-wrapper{
     display: none;
    }
+   .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
+    font-size: 4.036vw;
+  }
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
+    font-size: 2.018vw;
+  } 
 
+}
+@media (max-width: 768px) {
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
+    font-size: 27px;
+  }
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
+    font-size: 15.533px;
+  }
+  .test-drive-form div:nth-child(5) .columns div div > p , .test-drive-form div:nth-child(3) .columns div div > p , .test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
+    margin-top: 30px;
+  } 
+  .section.two-col-form.test-drive-form .form .form-submit{
+    text-align: center;
+ 
+    }
+    .section.two-col-form.test-drive-form .form .form-submit .btn{
+      border-radius: 3px;
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+
+}
+
+/* form conatiner query */
+@media (min-width: 576px) {
+  main > .section.two-col-form.test-drive-form{
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  main > .section.two-col-form.test-drive-form{
+      max-width: 45pc;
+  }
+
+}
+@media (min-width: 992px) {
+  main > .section.two-col-form.test-drive-form{
+      max-width: 60pc;
+  }
+}
+@media (min-width: 1200px) {
+  main > .section.two-col-form.test-drive-form{
+      max-width: 855pt;
+  }
+}
+@media (min-width: 1500px) {
+  main > .section.two-col-form.test-drive-form{
+      max-width: 975pt;
+  }
 }
 
 @media (max-width: 991px) {
@@ -375,3 +460,5 @@
     font-size: 3.02725vw;
   }
 }
+
+
