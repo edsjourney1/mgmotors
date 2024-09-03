@@ -301,6 +301,7 @@
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom:60px;
 }
 .section.two-col-form.test-drive-form > div{
   padding-inline: 12px;
