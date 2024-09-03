@@ -255,6 +255,11 @@
 .form-submit .btn:hover, .form-submit .btn:active, .form-submit .btn:focus {
   background-color: #000;
 }
+@media (min-width:1024){
+  .form-submit .btn{
+    font-size:1.04167vw;
+  }
+}
 
 @media (max-width: 991px) {
   .section.two-col-form.form-container {
