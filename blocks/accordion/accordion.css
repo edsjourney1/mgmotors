@@ -69,7 +69,7 @@
   padding: 48px 0 8px 0;
   max-width: 1300px;
   padding-inline: 12px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 /*   main > .faq-section > div{

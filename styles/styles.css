@@ -360,11 +360,11 @@ main>.section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >=900px) {
+/* @media (width >=900px) {
   main>.section>div {
     padding: 0 100px;
   }
-}
+} */
 
 /* section metadata */
 main .section.light,
