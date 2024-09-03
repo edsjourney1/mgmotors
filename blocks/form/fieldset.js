@@ -75,5 +75,4 @@ newDiv.innerHTML = `
 `;
 
 // Insert the new div under the "form-wrapper"
-formWrapper.insertBefore(newDiv, formWrapper.firstChild);
-
+if (formWrapper) formWrapper.insertBefore(newDiv, formWrapper.firstChild);
