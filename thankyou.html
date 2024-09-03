@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Thank you</title>
+  <script type="text/javascript">
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta property="og:title" content="Page not found"> -->
+  <script src="/scripts/scripts.js" type="module" crossorigin="use-credentials"></script>
+  <script type="module">
+    import { sampleRUM } from '/scripts/lib-franklin.js';
+
+    window.addEventListener('load', () => {
+      if (document.referrer) {
+        const { origin, pathname } = new URL(document.referrer);
+        if (origin === window.location.origin) {
+          const backBtn = document.createElement('a');
+          backBtn.classList.add('button', 'error-button-back');
+          backBtn.href = pathname;
+          backBtn.textContent = 'Go back';
+          backBtn.title = 'Go back';
+          const btnContainer = document.querySelector('.button-container');
+          btnContainer.append(backBtn);
+        }
+      }
+    //   sampleRUM('404', { source: document.referrer, target: window.location.href });
+    });
+  </script>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <style>
+    main.error {
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+    }
+
+    main.error .error-number {
+      width: 100%;
+    }
+
+    main.error .error-number text {
+      font-family: var(--fixed-font-family);
+    }
+
+    .thankyou-message {
+        
+        padding: 50px;
+        font-size: 2.08333vw;
+      color: #cf2230;
+      font-family: 'GillSans-semibold';
+      text-align: center;
+      padding-bottom: 2.125vw;
+      margin: 0;
+      margin-top:100px;
+      }
+      .button-wrapper{
+   
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 160px;
+
+      }
+      .button-wrapper a.button{
+        background-color: #cf2230;
+        padding: .52083vw 1.5625vw;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-family: roboto-medium;
+        transition: all 1s linear;
+      }
+@media (max-width:900px){
+    .thankyou-message {
+        font-size:20px;
+     }
+     .button-wrapper a.button{
+        font-size: 16px;
+        padding: 5px 10px;
+     }
+     .button-wrapper{
+        padding-bottom: 60px;
+     }
+}
+  </style>
+  <link rel="stylesheet" href="/styles/lazy-styles.css">
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="thankyou-cont">
+      <h2 class="thankyou-message">Thank you for Submiting the form<br/></h2>
+      <div class="button-wrapper">
+        <p class="button-container">
+            <a href="https://main--mgmotors--edsjourney1.hlx.live/comet" class="button secondary ">MG Windsor EV</a>
+        </p>
+        <p class="button-container">
+            <a href="https://main--mgmotors--edsjourney1.hlx.live/comet" class="button secondary ">Comet</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
