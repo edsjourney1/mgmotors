@@ -1,4 +1,4 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import { createOptimizedPicture } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   /* Change to ul, li */
@@ -30,7 +30,7 @@ export default function decorate(block) {
 
     [...li.children].forEach((div) => {
       const anchors = div.querySelectorAll('a');
-      const pictures = div.querySelectorAll('picture');
+      const pictures = div.querySelectorAll('img');
 
       if (anchors.length === 2) {
         div.className = 'cards-card-brochure';
@@ -56,7 +56,7 @@ export default function decorate(block) {
     ul.append(li);
   });
 
-  ul.querySelectorAll('picture > img').forEach((img) => {
+  ul.querySelectorAll('img').forEach((img) => {
     img.closest('picture').replaceWith(
       createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])
     );

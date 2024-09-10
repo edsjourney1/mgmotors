@@ -698,7 +698,11 @@ main>.section.social-section>div {
   border: 1px solid #eae9e7;
   display: block;
 }
-
+.main-image .columns.columns-2-cols>div>.columns-img-col img {
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
 @media (max-width: 768px) {
   main>.section>div {
     padding: 0 12px;
