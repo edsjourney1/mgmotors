@@ -431,7 +431,8 @@ main .section.highlight {
   min-height: calc(100vh - 60px);
   background-position-y: bottom;
   padding-top: 18vw;
-  background-image: url('../files/comet-back.webp');
+
+  background-image: url('https://mgmotor.scene7.com/is/image/mgmotor/cm-bn-dsc-038?wid=1263&hei=585&fit=crop,0');
 }
 
 .hidden {
@@ -441,7 +442,8 @@ main .section.highlight {
 
 @media (max-width: 768px) {
   .section.comet-hero {
-    background-image: url('../files/comet-back-mob.webp');
+ 
+    background-image: url('https://mgmotor.scene7.com/is/image/mgmotor/cm-bn-dsc-038-portrait?$mg-rgb-tablet-image-responsive$');
     background-position-y: top;
     padding-top: 40vw;
   }
