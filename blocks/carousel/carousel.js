@@ -229,9 +229,9 @@
     });
     var picturesrc = document.querySelectorAll('.carousel-slide picture source');
     picturesrc.forEach((src, i) =>{
-      if(i != 0 && i !=3){
+      // if(i != 0 && i !=3){
         src.remove();
-      }
+      // }
     });
     
     const slides = document.querySelectorAll('.carousel-slide');
