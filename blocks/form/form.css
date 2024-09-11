@@ -418,6 +418,12 @@ left: 0;
 text-align: left;
 }
 /* OTP */
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper legend {
+  font-size: 1pc;
+  font-family: GillSans-regular;
+  width: 100%;
+  font-weight: normal;
+}
 .section.two-col-form.test-drive-form .form div div p form {
   position: relative;
 }
