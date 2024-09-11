@@ -417,6 +417,55 @@ left: 0;
 .section.two-col-form.test-drive-form .form .form-submit{
 text-align: left;
 }
+/* OTP */
+.section.two-col-form.test-drive-form .form div div p form {
+  position: relative;
+}
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper{
+  display: flex;
+  margin: 30px 0 30px 0;
+  width: 50%;
+}
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
+  content: 'Get OTP';
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f2f2f2;
+  color: #6e6e6e;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12.75px;
+  font-family: roboto-medium;
+  border: 1px solid rgba(0,0,0,0.175);
+  position: absolute;
+  right: -28%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
+  content: 'OTP will be sent on both mobile and email';  
+  display: inline-block;
+  position: absolute;
+  left: 131%;
+  top: 0;
+  margin-top: 13px;
+  font-size: 11px;
+  color: #6e6e6e;
+  width: 100%;
+}
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper > div.field-wrapper{
+  margin-top: 0;
+}
+@media (max-width: 1200px) {
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
+    left: 145%;  
+  }
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
+    right: -40%;
+  }
+
+}
 
 @media (max-width: 991px) {
 .test-drive-form .form-wrapper .form{
@@ -441,6 +490,21 @@ text-align: left;
   .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
     font-size: 2.018vw;
   } 
+    /* otp */
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper{
+    width: 70%;
+    margin-bottom: 60px;
+  }
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
+    right: -20%;
+  }
+
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
+    left:50%;
+    display: block;
+    top: 120%;
+    padding-bottom: 60px;
+  }
 
 }
 @media (max-width: 768px) {
