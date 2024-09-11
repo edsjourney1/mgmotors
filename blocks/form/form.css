@@ -496,7 +496,7 @@ text-align: left;
     margin-bottom: 60px;
   }
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
-    right: -20%;
+    right: -30%;
   }
 
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
