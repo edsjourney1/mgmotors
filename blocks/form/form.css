@@ -255,6 +255,17 @@
 .form-submit .btn:hover, .form-submit .btn:active, .form-submit .btn:focus {
   background-color: #000;
 }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url('../../files/calendar_icon.png') no-repeat;
+  width: 20px;
+  height: 20px;
+  background-position: 95% 50%;
+  background-size: 20px;
+  background-position: 95% 50%;
+}
 @media (min-width:1024px){
   .form-submit .btn{
     font-size:1.04167vw;
