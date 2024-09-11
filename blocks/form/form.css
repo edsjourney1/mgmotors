@@ -452,7 +452,7 @@ text-align: left;
   color: #6e6e6e;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 12.75px;
+  font-size: .833vw;
   font-family: roboto-medium;
   position: absolute;
   right: -28%;
@@ -485,6 +485,9 @@ text-align: left;
 }
 
 @media (max-width: 991px) {
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
+    font-size: 1.613vw;
+  }
 .test-drive-form .form-wrapper .form{
     margin-top:30px;
   }
@@ -527,6 +530,9 @@ text-align: left;
 @media (max-width: 768px) {
   .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
     font-size: 27px;
+  }
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
+    font-size: 2.778vw;
   }
   .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
     font-size: 15.533px;
